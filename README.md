@@ -61,7 +61,10 @@ si utilizamos una cita
 para utilizar un salto de linea se debe hacer mas de tres veces los caracteres
 1. "---"
 1. "***"
- 
+
+## videos de youtube
+ <a href="https://www.youtube.com/watch?v=FiM1RsksNI4" target="_blank"><img src="http://farm5.static.flickr.com/4003/4436928175_4d8d02f57d.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 # JavaScript
 Curso
