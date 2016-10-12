@@ -18,5 +18,19 @@ Este repositorio forma parte del [curso de javascript](https://github.com/faxa94
 ## Links
 Para utilizar [link](https://www.google.com) debemos de encerrar el texto en brackets[] seguido del url 
 
+## Imagenes 
+Para nostros utilizar imagenes debemos de colocar un texto alternativo 
+![alt text](http://farm5.static.flickr.com/4003/4436928175_4d8d02f57d.jpg)
+
+## Formateo de codigo
+para utilizar el formateo de codigo dentro de texdto plano debemos de utilizar el caracter `tilde invertida`
+
+Para utilizar el formateo de codigo e u bloque de codigo necesitamos 3 `tilde invertida` donde se puede especificar el lenguaje
+de programacion a utilizarse despues de las 3 `tilde invertida`
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
 # JavaScript
 Curso
