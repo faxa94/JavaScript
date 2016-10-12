@@ -49,5 +49,13 @@ columna 1|columna 2|columna 3
 ---|---|---
 valor a1|valor a2|valor a3
 
+## Citas 
+Para escribir varias lineas de citas solamente las concatenamos utilizando >
+>yo solo se que nada se
+>random
+
+si utilizamos una cita 
+>random
+
 # JavaScript
 Curso
