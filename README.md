@@ -31,6 +31,16 @@ de programacion a utilizarse despues de las 3 `tilde invertida`
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
+* bloque de codigo por consola
+```
+>apt-get update paquete
+```
+
+* bloque de codigo por html
+```
+<html>
+</html>
+```
 
 # JavaScript
 Curso
