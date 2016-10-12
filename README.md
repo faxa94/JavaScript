@@ -15,5 +15,8 @@ Este repositorio forma parte del [curso de javascript](https://github.com/faxa94
         * dos espacios
 1. dasda
 
+## Links
+Para utilizar [link](https://www.google.com) debemos de encerrar el texto en brackets[] seguido del url 
+
 # JavaScript
 Curso
