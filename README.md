@@ -5,7 +5,7 @@ Este repositorio forma parte del [curso de javascript](https://github.com/faxa94
 
 * Para nosotros utilizar un texto en  **negrita** se utiliza dos "**".
 * Para nosotros utilizar un texto en  *cursiva* se utiliza un "*".
-* Para nosotros utilizar un --texto tachado-- se utiliza un "-".
+* Para nosotros utilizar un ~~texto tachado~~ se utiliza un "-".
 
 ## Listas Ordenadas
 
