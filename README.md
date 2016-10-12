@@ -57,5 +57,11 @@ Para escribir varias lineas de citas solamente las concatenamos utilizando >
 si utilizamos una cita 
 >random
 
+## Salto de olinea
+para utilizar un salto de linea se debe hacer mas de tres veces los caracteres
+1. "---"
+1. "***"
+ 
+
 # JavaScript
 Curso
