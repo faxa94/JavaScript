@@ -45,9 +45,9 @@ alert(s);
 ## Tablas
 Para usar tablas necesitamos definir las filas con 
 
-|columna 1| columna 2|columna 3|
-|-|-|-|
-|valor a1|valor a2|valor a3|
+columna 1| columna 2|columna 3
+-|-|-
+valor a1|valor a2|valor a3
 
 # JavaScript
 Curso
