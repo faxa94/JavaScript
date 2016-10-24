@@ -74,4 +74,39 @@ Extensible Markup Language, es un meta-lenguaje que permite definir lenguajes de
 
 <a name="desarrollo"></a>
 ## Desarrollo del informe
+<p align="center">
+<img src="https://github.com/faxa94/JavaScript/blob/master/imagenes/1.PNG?raw=true" width="500" height="300">
+</p>
+### Descripcion
+Mediante la aplicacion Postman se realiza el analisis durante el tiempo de carga de pagina de Google. Se muestra el formato del mensaje http que el browser envia a un servidor para cargar el sitio web, utilizando el metodo get. Tambien se visualiza la fecha de la ultima mmodificacion de la pagina, asi como pambien el url del servidor donde yace la pagina web.
 
+Ademas se utilizaron listas ordenadas y no ordenadas para la division del contenido, mediante el tag ul y li. Para enlacesse utilizo el tag a junto con las propiedad href y tab. Aqui su ejecucion:
+
+<p align="center">
+<img src="https://github.com/faxa94/JavaScript/blob/master/imagenes/2.PNG?raw=true" width="500" height="300">
+</p>
+### Descripcion
+Utilizando el inspeccionar de objetos de chrome se revisa el formato de mensaje al solicitar la pagina web de inicio de Google. Al igual que postman se puede observar el metodo http utilizado, asi tambien los elementos como la linea de solicitud y la cabecera. Dentro de la cabecera se tiene los elementos como la cache, el servidor destino entre otros atributos.
+
+<p align="center">
+<img src="https://github.com/faxa94/JavaScript/blob/master/imagenes/4.PNG?raw=true" width="500" height="300">
+</p>
+### Descripcion
+Se creo una pagina html inicial, con el proposito de entendeer los principal tags utilizados para la creacion de una pagina web. DEntro de la pagina se establece el formato html5 mediante la linea Doctype.
+
+Entre otras propiedades se utilizo el tag de estilos para poner color y configuracion de algun elemento html como imagenes. Un ejemplo de cambio de color al fondo de la pagina web: style="background-color: #ffffcc. Se puede modificar los colores de los elementos html de dos formas, utilizando el nombre del color o tambien y el mas comun en formato hexadecimal.
+
+<p align="center">
+<img src="https://github.com/faxa94/JavaScript/blob/master/imagenes/3.PNG?raw=true" width="500" height="300">
+</p>
+En la ejecucion se diferencia que el fondo de la pagina web es diferente al contenido interno de la pagina web, ya que este toma diferentes colores establecidos por la propiedad style.
+
+<a name="conrec"></a>
+## Conclusiones y Recomendaciones
+
+- Existe diferencias entre los metodos http, que varian dependiendo desde el punto de ejecucion por parte del servidor o del cliente.
+- Html5 es una evolucion de html que esta junto con CSS3 para la declaracion de estilos.
+- Postman y la inspeccion de objetos de chrome proporcionan informacion util para el entendiendo del protocolo de la capa de aplicacion http.
+
+<br>
+<a href="#cabecera">A la cabecera</a>
