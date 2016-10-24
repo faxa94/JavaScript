@@ -31,9 +31,9 @@
 
 <a name="objetivos"></a>
 ## Objetivos
-- Desarrollar el conocimiento Web
+- Fomentar el conocimiento basico sobre los metodo http
 - Conocer herramientas de desarrolladores web como: postman, inspetor web
-- Aprender el uso de lenguaje HTML CSS
+- Introducir los elementos basicos en la creacion de paginas web a travez de html5 y ccs3
 
 
 <a name="marco-teorico"></a>
