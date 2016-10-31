@@ -1,11 +1,11 @@
 
-# Introducción a la Web
+# CSS
 ### Materia : `Tecnologías Web con JavaScript`
-### Tema : `Introducción a la Web` 
-### Fecha : `2016-10-23`
+### Tema : `CSS` 
+### Fecha : `2016-10-31`
 ### Estudiante : `Andres Fabricio Chasiliquin Armendariz`
 ### Profesor : `Tania Calle - Adrian Eguez`
-### Número de informe : `1`
+### Número de informe : `2`
 <a name="cabecera"></a>
 ## Índice de contenidos
 
@@ -26,7 +26,7 @@
 
 <a name="tema"></a>
 ## Tema
-`Introduccion a la Web`
+`CSS`
 
 
 <a name="objetivos"></a>
@@ -39,37 +39,68 @@
 <a name="marco-teorico"></a>
 ## Marco Teorico
 <a name="tema1"></a>
-###METODOS HTTP
-Forman parte del formato de mensajes http tanto para solicitud y respuesta en una arquitectura cliente servidor. Los mensajes para una solicitud estan generados en dos partes:
-- Linea de Solicitud: En esta parte del mensaje se entra los metodos http para una peticion, tambien se encuentra el url y la version http utilizada por el browser. Ej(get /unidireecion/pagina.html HTTP/1.1). Los metodos mas comunes son:
-    * Post: Se utiliza para el llenado de formularios por parte del browser, es decir cuando el usuario llena un determinado formulario con su nombre y contrasena, y envia para su acceso, el metodo post recoge esta informacion y la incorpora dentro de un objeto para enviarla al servidor.
-    * Get: Metodo utilizado para solicir un objeto, en otras palabras una pagina web, un archiv, una descarga, un video.
-    * Head: SE la utiliza comunmente para depuracion, su particularidad es evitar que los objetos se envien dentro de una peticion http, es decir si el usuario lleno un formulario, la informacion incorporada dentro de este no se envia.
-    * Put: Se utiliza para cargar los objetos de una ruta especifica (directorio) de un servidor web.
-    * Delete: Elimina objetos de un servidor web especificando la ruta o directorio raiz. 
+###ARCHIVOS CSS
+Cascading Stylesheets es un lenguaje de hojas de estilo para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Un lenguaje marcado es aquel que puede ser programado mediante texto, etiquetas y estructuras para su presentacion.
 
-- Linea de Cabecera(Fuente: James F. Kurose and Keith W. Ross, Computer Networking, A Top-Down Approach Featuring the Internet)
+CSS es una tecnologia utiliza en muchas pagianas web para mejorar el aspecto visual de la pagina, mediante la agregacion de transciciones, colores y forma a los objetos web. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada))
 <a name="tema2"></a>
-### DEFINICION HTML
-HTML, que significa Lenguaje de Marcado para Hipertextos (HyperText Markup Language) es el elemento de construcción más básico de una página web y se usa para crear y representar visualmente una página web. Determina el contenido de la página web, pero no su funcionalidad.(Fuente: [Mozilla](https://developer.mozilla.org/es/docs/Web/HTML))
-<a name="tema3"></a>
-### BROWSER
-Comunmente llamado navegador, es un software, aplicación o programa que permite el acceso a la Web, interpretando la información de distintos tipos de archivos y sitios web para que estos puedan ser visualizados.(Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Navegador_web))
-<a name="tema4"></a>
-### WORLD WIDE WEB
-Es un subconjunto de Internet. La web consta de páginas que se puede acceder mediante un navegador web. El Internet es la red real de las redes donde reside toda la información. Con hipertexto, una palabra o frase puede contener un enlace a otro sitio web. Todas las páginas web están escritas en el lenguaje de marcado de hipertexto (HTML), que trabaja en conjunto con HTTP.  (Fuente: [Techterms](http://techterms.com/definition/www))
-<a name="tema5"></a>
-### DEFINICION CSS 
-CSS es un lenguaje de hojas de estilos creado para controlar el aspecto o presentación de los documentos electrónicos definidos con HTML y XHTML. CSS es la mejor forma de separar los contenidos y su presentación y es imprescindible para crear páginas web complejas. (Fuente: [LibrosWeb](http://librosweb.es/libro/css/capitulo_1.html))
-<a name="tema6"></a>
-### POSTMAN
-Aplicacion que permite construir peticiones rápidamente, para despues guardarlas para su uso posterior, tambien analiza las respuestas enviadas a travez de la web. Postman reduce drásticamente el tiempo necesario para probar y desarrollar nuevas API. (Fuente: [GetPostman](https://www.getpostman.com/docs/introduction))
-<a name="tema7"></a>
-### XML
-Extensible Markup Language, es un meta-lenguaje que permite definir lenguajes de marcas desarrollado por el World Wide Web Consortium (W3C) utilizado para almacenar datos en forma legible.(Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Extensible_Markup_Language))
 
-<a name="tema8"></a>
-### NPM NODE
+### SINTAXIS CSS
+La aplicacion de formatos a los objetos de una pagina html se debe seguir el siguiente formato:
+####Selector
+    selector {   
+               propiedad1: valor1;            
+               propiedad2: valor2;            
+    }
+    
+Donde tag, es un selector utilizado para identificar algun objeto. Propiedad son los atributos que se desean modificar y por ultimo el valor esta relacionado con los valores aceptables de una propiedad.
+
+####Selector ID
+    #selector {   
+               propiedad1: valor1;            
+               propiedad2: valor2;            
+    }
+    
+El selector ID es un atributo que identifica de manera unica a un objeto. Para el caso de selectores ID se debe interponer antes del selector el simbolo numeral. 
+
+####Selector de Clase
+    .selector {   
+               propiedad1: valor1;            
+               propiedad2: valor2;            
+    }
+    
+El selector de clase refenrecnia a los elemento de una clase especifica. Para el caso de selectores de clase se debe interponer antes del selector, un punto.(Fuente: [w3school](http://www.w3schools.com/css/css_syntax.asp))
+
+<a name="tema3"></a>
+### COLORES CON CSS
+Existen dos maneras de inponer un color:
+* Notacion Hexadecimal: Es una forma de representar los colores que vemos cada día en un formato que un ordenador puede interpretar y mostrar. ESta compuesto por tres bytes, donde cada byte esta en notacion hexadecimal. Su formtao es: #rojo,verde,azul.
+* Palabras Reservadas: Algunos de los colores mas usados son referenciado por su nombre, de esta manera resulta mas facil utilizar dicho color sin su representacion hexadecimal.(Fuente: [HtmlColores](http://htmlcolorcodes.com/es/))
+
+
+<a name="tema4"></a>
+### BACKGROUND COLOR
+Propiedad que especifica el color de fondo de un elemento. Sintaxis:
+background-color: color;
+Existen al igual que color dos formatos para su especificacion.(Fuente: [w3school](http://www.w3schools.com/css/css_background.asp))
+<a name="tema5"></a>
+
+### BOOTSTRAP
+Es un framework o conjunto de herramientas de Código abierto para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía, formularios, y otros elementos de diseño basado en HTML y CSS, así como, extensiones de JavaScript opcionales adicionales(Fuente: [Wipedia](https://es.wikipedia.org/wiki/Twitter_Bootstrap))
+
+
+<a name="tema6"></a>
+### GRID
+Son estructuras para sobreponer objetos html, se permite un maximo de 12 columnas y tienes diferentes tipos de llamadas.
+* xs telefonos
+* sm tablests
+* md escritorio
+* lg escritorio largo
+ (Fuente: [w3school](http://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp))
+ 
+<a name="tema7"></a>
+### TIPOGRAFIA
+Formato de los titulos, esta asociado para cada titulo un distinto tamaño que va desde el mas grande (h1), hasta ubicarse entre los mas pequeños (h2,h3...). Ademas cuenta con tags para la implementacion de estilos como negritas, cursiva, subrayado entre otros.(Fuente: [Wikipedia] (Fuente: [w3school](http://www.w3schools.com/bootstrap/bootstrap_typography.asp))
 
 
 <a name="desarrollo"></a>
