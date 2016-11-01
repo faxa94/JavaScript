@@ -13,7 +13,7 @@
 - <a href="#tema">Tema</a>
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco-teorico">Marco Teorico</a>
-  * <a href="tema0">ARCHIVOS CSS</a>
+  * <a href="tema1">ARCHIVOS CSS</a>
   * <a href="#tema2">SINTAXIS CSS</a>
   * <a href="#tema3">COLORES CON CSS</a>
   * <a href="#tema4">BACKGROUND COLOR</a>
@@ -40,8 +40,8 @@
 
 
 
-<a name="tema0"></a>
-###ARCHIVOS CSS
+<a name="tema1"></a>
+### ARCHIVOS CSS
 Cascading Stylesheets es un lenguaje de hojas de estilo para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Un lenguaje marcado es aquel que puede ser programado mediante texto, etiquetas y estructuras para su presentacion.
 
 CSS es una tecnologia utiliza en muchas pagianas web para mejorar el aspecto visual de la pagina, mediante la agregacion de transciciones, colores y forma a los objetos web. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada))
