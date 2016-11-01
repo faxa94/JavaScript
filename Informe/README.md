@@ -32,11 +32,12 @@
 ## Objetivos
 - Analizar el contenido del archivo de estilos de una pagina web a travez del inspector de Google Chrome
 - Desarrollar habilidades en la utilizacion de archivos .css
-- Utilizar herramientas para el desarrolo de una pagina web, contenidas dentro del framework bootstrap.
+- Utilizar herramientas para el desarrollo de una pagina web, contenidas dentro del framework bootstrap.
 
 
 <a name="marco-teorico"></a>
 ## Marco Teorico
+
 <a name="tema1"></a>
 ###ARCHIVOS CSS
 Cascading Stylesheets es un lenguaje de hojas de estilo para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Un lenguaje marcado es aquel que puede ser programado mediante texto, etiquetas y estructuras para su presentacion.
