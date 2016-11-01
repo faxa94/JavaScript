@@ -13,7 +13,7 @@
 - <a href="#tema">Tema</a>
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco-teorico">Marco Teorico</a>
-  * <a href="tema1">ARCHIVOS CSS</a>
+  * <a href="#tema1">ARCHIVOS CSS</a>
   * <a href="#tema2">SINTAXIS CSS</a>
   * <a href="#tema3">COLORES CON CSS</a>
   * <a href="#tema4">BACKGROUND COLOR</a>
