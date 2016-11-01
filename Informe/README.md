@@ -13,14 +13,13 @@
 - <a href="#tema">Tema</a>
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco-teorico">Marco Teorico</a>
-  * <a href="tema1">METODOS HTTP</a>
-  * <a href="#tema2">DEFINICION DE HTML</a>
-  * <a href="#tema3">BROWSER</a>
-  * <a href="#tema4">WORLD WIDE WEB</a>
-  * <a href="#tema5">DEFINICION CSS</a>
-  * <a href="#tema6">POSTMAN</a>
-  * <a href="#tema7">XML</a>
-  * <a href="#tema8">NPM NODE</a>
+  * <a href="tema1">ARCHIVOS CSS</a>
+  * <a href="#tema2">SINTAXIS CSS</a>
+  * <a href="#tema3">COLORES CON CSS</a>
+  * <a href="#tema4">BACKGROUND COLOR</a>
+  * <a href="#tema5">BOOTSTRAP</a>
+  * <a href="#tema6">GRID</a>
+  * <a href="#tema7">TIPOGRAFIA</a>
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 
@@ -31,9 +30,9 @@
 
 <a name="objetivos"></a>
 ## Objetivos
-- Fomentar el conocimiento basico sobre los metodo http
-- Conocer herramientas de desarrolladores web como: postman, inspetor web
-- Introducir los elementos basicos en la creacion de paginas web a travez de html5 y ccs3
+- Analizar el contenido del archivo de estilos de una pagina web a travez del inspector de Google Chrome
+- Desarrollar habilidades en la utilizacion de archivos .css
+- Utilizar herramientas para el desarrolo de una pagina web, contenidas dentro del framework bootstrap.
 
 
 <a name="marco-teorico"></a>
@@ -170,9 +169,9 @@ Para la utilizacion de tablas se empleo la clase table
 <a name="conrec"></a>
 ## Conclusiones y Recomendaciones
 
-- Existe diferencias entre los metodos http, que varian dependiendo desde el punto de ejecucion por parte del servidor o del cliente.
-- Html5 es una evolucion de html que esta junto con CSS3 para la declaracion de estilos.
-- Postman y la inspeccion de objetos de chrome proporcionan informacion util para el entendiendo del protocolo de la capa de aplicacion http.
+- El inspector de google chrome, me permite observar los estilos que se han impuesto a una clase u objeto html. Tambien permite que a un mismo objeto asignarle direferentes estilos, el inspector recoge la informacion de todos los estilos aplicados y destaca aquel que se esta utilizando en ese instante. 
+- Bootstrap, tiene un fichero de estilos, entre los mas detacados estas el tamaño y la forma de los grid.
+- Se puede asignar diferentes tipos de formato a un mismo objeto, sin embargo solo se aplicara el ultimo asignado, debido a que los ficheros css trabajan en cascada.
 
 <br>
 <a href="#cabecera">A la cabecera</a>
