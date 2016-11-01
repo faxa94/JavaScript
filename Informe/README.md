@@ -106,31 +106,66 @@ Formato de los titulos, esta asociado para cada titulo un distinto tamaño que v
 <a name="desarrollo"></a>
 ## Desarrollo del informe
 <p align="center">
-<img src="https://github.com/faxa94/JavaScript/blob/master/imagenes/1.PNG?raw=true" width="500" height="300">
+<img src="https://github.com/faxa94/JavaScript/blob/css/Informe/imagenes%20css%20y%20bootstrap/2.png?raw=true" width="500" height="300">
 </p>
 ### Descripcion
-Mediante la aplicacion Postman se realiza el analisis durante el tiempo de carga de pagina de Google. Se muestra el formato del mensaje http que el browser envia a un servidor para cargar el sitio web, utilizando el metodo get. Tambien se visualiza la fecha de la ultima mmodificacion de la pagina, asi como pambien el url del servidor donde yace la pagina web.
-
-Ademas se utilizaron listas ordenadas y no ordenadas para la division del contenido, mediante el tag ul y li. Para enlacesse utilizo el tag a junto con las propiedad href y tab. Aqui su ejecucion:
+Primero iniciamos el servidor http utilizando la consola de comandos, dentro de la rama css en la ubicacion del repositorio. De esta manera solamente archivos localizados en esta carpeta funcionaran bajo el servidor http. Si se ejecuta archivos que esten en subdirectorios dentro de la rama raiz tambien se veran afectados, sin embargo, si se ejecuta archivos que esten sobre la rama raiz, se encontrara con errores en la ejecucion de la pagina web.
 
 <p align="center">
-<img src="https://github.com/faxa94/JavaScript/blob/master/imagenes/2.PNG?raw=true" width="500" height="300">
+<img src="https://github.com/faxa94/JavaScript/blob/css/Informe/imagenes%20css%20y%20bootstrap/3.png?raw=true" width="500" height="300">
 </p>
 ### Descripcion
-Utilizando el inspeccionar de objetos de chrome se revisa el formato de mensaje al solicitar la pagina web de inicio de Google. Al igual que postman se puede observar el metodo http utilizado, asi tambien los elementos como la linea de solicitud y la cabecera. Dentro de la cabecera se tiene los elementos como la cache, el servidor destino entre otros atributos.
+Utilizando el inspeccionar de objetos de chrome se revisa la estructura de la pagina web creado, y se identifica los diferentes componentes del archivo como son el tag del body, html, titulos y parrafos. El body tiene un color verde, los titulos declarados por el selector h1, estan pintados de plomo, los parrafos estan pintados de colores rojo, amarillo, azul, correspondientes al id igual a rojo, amarillo y azul del tag 'p'.
+
+Para su implementacion se propuso dentro del head un link de referencia a un archivo css, el cual conteniene todos los estilos presentes en el sitio web. Se puede referenciar de dos maneras:
+* Usando un archivo dentro de la computadora
+* Direccionando a una servidor que contiene dicho fichero
+```
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+```
 
 <p align="center">
-<img src="https://github.com/faxa94/JavaScript/blob/master/imagenes/4.PNG?raw=true" width="500" height="300">
+<img src="https://github.com/faxa94/JavaScript/blob/css/Informe/imagenes%20css%20y%20bootstrap/6.png?raw=true" width="500" height="300">
 </p>
 ### Descripcion
-Se creo una pagina html inicial, con el proposito de entendeer los principal tags utilizados para la creacion de una pagina web. DEntro de la pagina se establece el formato html5 mediante la linea Doctype.
+Se utilizo el framework bootstrap, y mediante la utilizacion de la clase col-sm-3 se creo 3 columnas
+```html
+<div class="col-sm-3 border">
+        <h3>col sm3 2</h3>
+</div>
+```
+De la misma manera en la siguiente fila se utiliza la clase col-lg-6 para crear dos columnas
+```
+    <div class="col-lg-6 borde">
+        <h3>col lg 1</h3>
+    </div>
 
-Entre otras propiedades se utilizo el tag de estilos para poner color y configuracion de algun elemento html como imagenes. Un ejemplo de cambio de color al fondo de la pagina web: style="background-color: #ffffcc. Se puede modificar los colores de los elementos html de dos formas, utilizando el nombre del color o tambien y el mas comun en formato hexadecimal.
+```
+En la siguiente columna se hizo uso de la clase col-xs-5 para crear dos columnas
+```
+ <div class="row col-xs-5 border">
+            <h2>col xs 5</h2>
+        </div>
+```
 
 <p align="center">
-<img src="https://github.com/faxa94/JavaScript/blob/master/imagenes/3.PNG?raw=true" width="500" height="300">
+<img src="https://github.com/faxa94/JavaScript/blob/css/Informe/imagenes%20css%20y%20bootstrap/1.png?raw=true" width="500" height="300">
 </p>
-En la ejecucion se diferencia que el fondo de la pagina web es diferente al contenido interno de la pagina web, ya que este toma diferentes colores establecidos por la propiedad style.
+###Descripcion
+Para los colores se utilizaron estilos definidos por el framework de bootstrap, de esta forma se tiene diferentes metodos para poner color a una clase, un selector y a un id.
+
+```
+        h1{
+            background-color: #a0a291;
+        }
+        p{
+            background-color: green;
+        }
+        .nombreClaseRojo{
+            background-color: red;
+        }
+```     
+Para la utilizacion de tablas se empleo la clase table
 
 <a name="conrec"></a>
 ## Conclusiones y Recomendaciones
