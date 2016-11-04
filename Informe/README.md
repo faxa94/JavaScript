@@ -33,9 +33,9 @@
 
 <a name="objetivos"></a>
 ## Objetivos
-- Analizar el contenido del archivo de estilos de una pagina web a travez del inspector de Google Chrome
-- Desarrollar habilidades en la utilizacion de archivos .css
-- Utilizar herramientas para el desarrollo de una pagina web, contenidas dentro del framework bootstrap.
+- Interpretar los concepto de validadcion, calidad y accesibilidad web.
+- Conocer las tecnicas implementadas para la accesibilidad web
+- Fomentar el conocimiento de los software de validadcion web y hosting
 
 
 <a name="marco-teorico"></a>
@@ -204,9 +204,8 @@ Un menú desplegable es un menú conmutable que permite al usuario elegir un val
 ## Conclusiones y Recomendaciones
 
 - La utilizacion de puglins en varios sitios web, permiten a la pagina web tener varios tipos de funcionalidades y no depender del programa fuente. Con la instalacion de los puglins se pueden incorporar dentro de una pagina web  otras funcionalidades independeintes.
-- Los software de validadcion web, son muy utilices para revisar si una pagina tien dentro de su estructura una corecta funcionalidad de cada una de las partes de su codigo fuente. La desventaja de estos validadores, es que tiene un p
-Bootstrap, tiene un fichero de estilos, entre los mas detacados estas el tamaño y la forma de los grid.
-- Se puede asignar diferentes tipos de formato a un mismo objeto, sin embargo solo se aplicara el ultimo asignado, debido a que los ficheros css trabajan en cascada.
+- Los software de validadcion web, son muy utilices para revisar si una pagina tiene dentro de su estructura una corecta funcionalidad de cada una de las partes de su codigo fuente. La desventaja de estos validadores, es que tiene un limite de revision.
+- La accesibilidad web es un tema que esta introducido dentro de la programacion de un sitio web, sin embargo este tipo de accesibilidad como lo es el alt solo estan orientado a ciertas partes de la comunidad discapacitada.
 
 <br>
 <a href="#cabecera">A la cabecera</a>
