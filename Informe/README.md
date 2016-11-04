@@ -142,7 +142,7 @@ Es el servicio que provee a los usuarios de Internet un sistema para poder almac
 <img src="https://github.com/faxa94/JavaScript/blob/bootstrap/Informe/imagenes/a1.PNG?raw=true" width="500" height="300">
 </p>
 ### Descripcion
-Software de validacion que permite conocer si una pagina web tiene errores no.
+Software de validacion que permite conocer si una pagina web tiene errores o no.
 
 <p align="center">
 <img src="https://github.com/faxa94/JavaScript/blob/bootstrap/Informe/imagenes/a2.PNG?raw=true" width="500" height="300">
@@ -156,42 +156,56 @@ Go Daddy es una empresa registradora de dominios de Internet y de alojamiento we
 ### Descripcion
 La propiedad alt permite a objetos como imagenes ser identificadas por aquellas personas que no pueden ver o tienes algun impedimiento fisico. Esto provoca mayor accesibilidad a una pagina web.
 ```html
-<div class="col-sm-3 border">
-        <h3>col sm3 2</h3>
-</div>
+<img src="smiley.gif" alt="Smiley face">
 ```
-De la misma manera en la siguiente fila se utiliza la clase col-lg-6 para crear dos columnas
-```
-
-<img src="smiley.gif" alt="Smiley face" width="42" height="42">
-
-```
-
 
 <p align="center">
 <img src="https://github.com/faxa94/JavaScript/blob/bootstrap/Informe/imagenes/a4.PNG?raw=true" width="500" height="300">
 </p>
 ###Descripcion
-Para los colores se utilizaron estilos definidos por el framework de bootstrap, de esta forma se tiene diferentes metodos para poner color a una clase, un selector y a un id.
+El framework bootstrap proporciona propiedades utiles en el desarrolo de sitios web como lo son los grid, tables, forms entre otros.
+Para la creacion de una tabla se utiliza los tags table, tr y td. 
+
+* Table: Especifica el inicio y fin de la tabla.
+
+* tr: filas de la tabla.
+
+* td: columna de la tabla.
+
+* th: Son los titulos para cada columna de la tabla
 
 ```
-        h1{
-            background-color: #a0a291;
-        }
-        p{
-            background-color: green;
-        }
-        .nombreClaseRojo{
-            background-color: red;
-        }
+     <table class="table table-hover">
+        <tr class="active">
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr class="info">
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+    </table>
 ```     
-Para la utilizacion de tablas se empleo la clase table
+####Dropdown
+Un menú desplegable es un menú conmutable que permite al usuario elegir un valor de una lista predefinida
+
+``` 
+ <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Lista<span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+``` 
 
 <a name="conrec"></a>
 ## Conclusiones y Recomendaciones
 
-- El inspector de google chrome, me permite observar los estilos que se han impuesto a una clase u objeto html. Tambien permite que a un mismo objeto asignarle direferentes estilos, el inspector recoge la informacion de todos los estilos aplicados y destaca aquel que se esta utilizando en ese instante. 
-- Bootstrap, tiene un fichero de estilos, entre los mas detacados estas el tamaño y la forma de los grid.
+- La utilizacion de puglins en varios sitios web, permiten a la pagina web tener varios tipos de funcionalidades y no depender del programa fuente. Con la instalacion de los puglins se pueden incorporar dentro de una pagina web  otras funcionalidades independeintes.
+- Los software de validadcion web, son muy utilices para revisar si una pagina tien dentro de su estructura una corecta funcionalidad de cada una de las partes de su codigo fuente. La desventaja de estos validadores, es que tiene un p
+Bootstrap, tiene un fichero de estilos, entre los mas detacados estas el tamaño y la forma de los grid.
 - Se puede asignar diferentes tipos de formato a un mismo objeto, sin embargo solo se aplicara el ultimo asignado, debido a que los ficheros css trabajan en cascada.
 
 <br>
