@@ -113,7 +113,7 @@ El formato internacional definido por ISO (IS0 8601) intenta encauzar todos esto
 ### SEO Search Engine Optimization
 Es el proceso técnico mediante el cual se realizan cambios en la estructura e información de una página web, con el objetivo de mejorar la visibilidad de un sitio web en los resultados orgánicos de los diferentes buscadores.
 
-(Fuente: [Wikipedia] (Fuente: [wikipedia](https://en.wikipedia.org/wiki/Search_engine_optimization))
+ (Fuente: [wikipedia](https://en.wikipedia.org/wiki/Search_engine_optimization))
 
 <a name="tema9"></a>
 ### TCP/IP
@@ -125,14 +125,12 @@ La familia de protocolos de Internet es un conjunto de protocolos de red en los 
 
 * SMTP (Simple Mail Transfer Protocol), Protocolo de Transferencia Simple de Correo, para correo electrónico.
 
-
-(Fuente: [Wikipedia] (Fuente: [wikipedia](https://es.wikipedia.org/wiki/Familia_de_protocolos_de_Internet))
+(Fuente: [wikipedia](https://es.wikipedia.org/wiki/Familia_de_protocolos_de_Internet))
 
 <a name="tema10"></a>
 ### HOSTING
 Es el servicio que provee a los usuarios de Internet un sistema para poder almacenar información, imágenes, vídeo, o cualquier contenido accesible vía web.
-
-(Fuente: [Wikipedia] (Fuente: [wikipedia](https://es.wikipedia.org/wiki/Alojamiento_web))
+ (Fuente: [wikipedia](https://es.wikipedia.org/wiki/Alojamiento_web))
 
 
 
