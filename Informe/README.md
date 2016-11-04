@@ -106,8 +106,7 @@ Cuando se utiliza un dispositivo de validación para comprobar los documentos HT
 <a name="tema7"></a>
 ### FORMATO DE FECHAS
 El formato internacional definido por ISO (IS0 8601) intenta encauzar todos estos problemas definiendo un sistema numérico de fechas. Utilizar fechas numéricas tiene también algunos peligros en relación con la legibilidad y la usabilidad.
-
-(Fuente: [Wikipedia] (Fuente: [w3school](http://w3schools.bootcss.com/website/web_quality.html))
+(Fuente: [w3school](http://w3schools.bootcss.com/website/web_quality.html))
 
 <a name="tema8"></a>
 ### SEO Search Engine Optimization
