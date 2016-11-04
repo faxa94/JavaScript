@@ -1,7 +1,7 @@
 # Diseño, calidad, WAI, Validación, Seo
 ### Materia : `Tecnologías Web con JavaScript`
 ### Tema : `CSS` 
-### Fecha : `2016-10-31`
+### Fecha : `2016-11-05`
 ### Estudiante : `Andres Fabricio Chasiliquin Armendariz`
 ### Profesor : `Tania Calle - Adrian Eguez`
 ### Número de informe : `3`
