@@ -12,13 +12,17 @@
 - <a href="#tema">Tema</a>
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco-teorico">Marco Teorico</a>
-  * <a href="#tema1">ARCHIVOS CSS</a>
-  * <a href="#tema2">SINTAXIS CSS</a>
-  * <a href="#tema3">COLORES CON CSS</a>
-  * <a href="#tema4">BACKGROUND COLOR</a>
-  * <a href="#tema5">BOOTSTRAP</a>
-  * <a href="#tema6">GRID</a>
-  * <a href="#tema7">TIPOGRAFIA</a>
+  * <a href="#tema1">DISEÑO</a>
+  * <a href="#tema2">PLUGINS</a>
+  * <a href="#tema3">CALIDAD WEB</a>
+  * <a href="#tema4">HTML5</a>
+  * <a href="#tema5">CSS3</a>
+  * <a href="#tema6">VALIDACION WEB</a>
+  * <a href="#tema7">FORMATO DE FECHAS</a>
+  * <a href="#tema8">SEO</a>
+  * <a href="#tema9">TCP/IP</a>
+  * <a href="#tema10">HOSTING</a>
+  
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 
@@ -40,98 +44,117 @@
 
 
 <a name="tema1"></a>
-### ARCHIVOS CSS
-Cascading Stylesheets es un lenguaje de hojas de estilo para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Un lenguaje marcado es aquel que puede ser programado mediante texto, etiquetas y estructuras para su presentacion.
+### DISEÑO 
+Las páginas web deben tener la menor cantidad de contenido haciendo que su tiempo de respuesta sea menor al usuario a través de su navegador web.  Un navegador web es un software, aplicación o programa que permite el acceso a la Web, interpretando la información de distintos tipos de archivos y sitios web para que estos puedan ser visualizados.
 
-CSS es una tecnologia utiliza en muchas pagianas web para mejorar el aspecto visual de la pagina, mediante la agregacion de transciciones, colores y forma a los objetos web. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada))
+
+Tiempo de respuesta: Es el tiempo medio que se demora un paquete tcp/ip en comunicarse con un servidor y traer su respuesta a un determinado host. Este puede varias dependiendo de varios factores como el tamaño del paquete, el ancho de banda de la red entre otras.
+(Fuente: [kurose: Computer networking a top-down approach])
 
 
 <a name="tema2"></a>
 
-### SINTAXIS CSS
-La aplicacion de formatos a los objetos de una pagina html se debe seguir el siguiente formato:
-####Selector
-    selector {   
-               propiedad1: valor1;            
-               propiedad2: valor2;            
-    }
-    
-Donde tag, es un selector utilizado para identificar algun objeto. Propiedad son los atributos que se desean modificar y por ultimo el valor esta relacionado con los valores aceptables de una propiedad.
+### PLUGINS
+Es una aplicación o programa informático que se relaciona con otra para agregarle una función nueva y generalmente muy específica. Esta aplicación adicional es ejecutada por la aplicación principal e interactúan por medio de la interfaz de programación de aplicaciones
 
-####Selector ID
-    #selector {   
-               propiedad1: valor1;            
-               propiedad2: valor2;            
-    }
-    
-El selector ID es un atributo que identifica de manera unica a un objeto. Para el caso de selectores ID se debe interponer antes del selector el simbolo numeral. 
-
-####Selector de Clase
-    .selector {   
-               propiedad1: valor1;            
-               propiedad2: valor2;            
-    }
-    
-El selector de clase refenrecnia a los elemento de una clase especifica. Para el caso de selectores de clase se debe interponer antes del selector, un punto.(Fuente: [w3school](http://www.w3schools.com/css/css_syntax.asp))
+(Fuente: [wikipedia](https://es.wikipedia.org/wiki/Complemento_(inform%C3%A1tica)))
 
 <a name="tema3"></a>
-### COLORES CON CSS
-Existen dos maneras de inponer un color:
-* Notacion Hexadecimal: Es una forma de representar los colores que vemos cada día en un formato que un ordenador puede interpretar y mostrar. ESta compuesto por tres bytes, donde cada byte esta en notacion hexadecimal. Su formtao es: #rojo,verde,azul.
-* Palabras Reservadas: Algunos de los colores mas usados son referenciado por su nombre, de esta manera resulta mas facil utilizar dicho color sin su representacion hexadecimal.(Fuente: [HtmlColores](http://htmlcolorcodes.com/es/))
+### CALIDAD WEB
+La utilización de nuevos estándares web mejoran la calidad en la misma. Un estándares web define las técnicas que describen aspectos de la World Wide Web. En años recientes, el término ha sido frecuentemente asociado con la tendencia de aprobar un conjunto de mejores prácticas estandarizadas para construir sitios web de calidad.
+
+(Fuente: [wikipedia](https://es.wikipedia.org/wiki/Est%C3%A1ndares_web))
 
 
 <a name="tema4"></a>
-### BACKGROUND COLOR
-Propiedad que especifica el color de fondo de un elemento. Sintaxis:
-background-color: color;
-Existen al igual que color dos formatos para su especificacion.(Fuente: [w3school](http://www.w3schools.com/css/css_background.asp))
+### HTML5
+HTML5  es la última versión de HTML. El término representa dos conceptos diferentes:
+
+* Se trata de una nueva versión de HTML, con nuevos elementos, atributos y comportamientos.
+
+* Contiene un conjunto más amplio de tecnologías que permite a los sitios Web y a las aplicaciones ser más diversas y de gran alcance. 
+
+Ventajas:
+* Semántica: Permite describir con mayor precisión cual es su contenido.
+
+* Conectividad: Permite comunicarse con el servidor de formas nuevas e innovadoras.
+
+* CSS3: Nos ofrece una nueva gran variedad de opciones para hacer diseños más sofisticados.
+
+* Rendimiento e Integración: Proporciona una mayor optimización de la velocidad y un mejor uso del hardware.
+
+(Fuente: [mozilla](https://developer.mozilla.org/es/docs/HTML/HTML5))
 <a name="tema5"></a>
 
-### BOOTSTRAP
-Es un framework o conjunto de herramientas de Código abierto para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía, formularios, y otros elementos de diseño basado en HTML y CSS, así como, extensiones de JavaScript opcionales adicionales(Fuente: [Wipedia](https://es.wikipedia.org/wiki/Twitter_Bootstrap))
+### CSS3
+Es un lenguaje de hojas de estilo para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado . Es muy usado para establecer el diseño visual de las páginas web, e interfaces de usuario escritas en HTML o XHTML.
+
+(Fuente: [Wipedia](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada))
 
 
 <a name="tema6"></a>
-### GRID
-Son estructuras para sobreponer objetos html, se permite un maximo de 12 columnas y tienes diferentes tipos de llamadas.
-* xs telefonos
-* sm tablests
-* md escritorio
-* lg escritorio largo
- (Fuente: [w3school](http://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp))
+### VALIDACION WEB
+La validación es el proceso que asegura que un documento escrito en un determinado lenguaje (por ejemplo XHTML) cumple con las normas y restricciones de ese lenguaje. Las normas y restricciones de los documentos escritos en XML  se definen en el DTD o Document Type Definition ("Definición del Tipo de Documento").
+
+Un validador es un programa de software que se pueden ver sus páginas web en contra de los estándares web.
+
+Cuando se utiliza un dispositivo de validación para comprobar los documentos HTML, XHTML o CSS, el validador devuelve una lista de los errores encontrados, de acuerdo con el estándar elegido.
+
+
+ (Fuente: [libros web](http://librosweb.es/libro/xhtml/capitulo_13.html))
  
 <a name="tema7"></a>
-### TIPOGRAFIA
-Formato de los titulos, esta asociado para cada titulo un distinto tamaño que va desde el mas grande (h1), hasta ubicarse entre los mas pequeños (h2,h3...). Ademas cuenta con tags para la implementacion de estilos como negritas, cursiva, subrayado entre otros.(Fuente: [Wikipedia] (Fuente: [w3school](http://www.w3schools.com/bootstrap/bootstrap_typography.asp))
+### FORMATO DE FECHAS
+El formato internacional definido por ISO (IS0 8601) intenta encauzar todos estos problemas definiendo un sistema numérico de fechas. Utilizar fechas numéricas tiene también algunos peligros en relación con la legibilidad y la usabilidad.
+
+(Fuente: [Wikipedia] (Fuente: [w3school](http://w3schools.bootcss.com/website/web_quality.html))
+
+<a name="tema8"></a>
+### SEO Search Engine Optimization
+Es el proceso técnico mediante el cual se realizan cambios en la estructura e información de una página web, con el objetivo de mejorar la visibilidad de un sitio web en los resultados orgánicos de los diferentes buscadores.
+
+(Fuente: [Wikipedia] (Fuente: [wikipedia](https://en.wikipedia.org/wiki/Search_engine_optimization))
+
+<a name="tema9"></a>
+### TCP/IP
+La familia de protocolos de Internet es un conjunto de protocolos de red en los que se basa Internet y que permiten la transmisión de datos entre computadoras.
+
+* FTP (File Transfer Protocol), Protocolo de Transferencia de Archivos, para transferencia de archivos o ficheros.
+
+* HTTP (HyperText Transfer Protocol), Protocolo de Transferencia de HiperTexto, que es popular porque se utiliza para acceder a las páginas web.
+
+* SMTP (Simple Mail Transfer Protocol), Protocolo de Transferencia Simple de Correo, para correo electrónico.
+
+
+(Fuente: [Wikipedia] (Fuente: [wikipedia](https://es.wikipedia.org/wiki/Familia_de_protocolos_de_Internet))
+
+<a name="tema10"></a>
+### HOSTING
+Es el servicio que provee a los usuarios de Internet un sistema para poder almacenar información, imágenes, vídeo, o cualquier contenido accesible vía web.
+
+(Fuente: [Wikipedia] (Fuente: [wikipedia](https://es.wikipedia.org/wiki/Alojamiento_web))
+
 
 
 <a name="desarrollo"></a>
 ## Desarrollo del informe
 <p align="center">
-<img src="https://github.com/faxa94/JavaScript/blob/css/Informe/imagenes%20css%20y%20bootstrap/2.png?raw=true" width="500" height="300">
+<img src="https://github.com/faxa94/JavaScript/blob/bootstrap/Informe/imagenes/a1.PNG?raw=true" width="500" height="300">
 </p>
 ### Descripcion
-Primero iniciamos el servidor http utilizando la consola de comandos, dentro de la rama css en la ubicacion del repositorio. De esta manera solamente archivos localizados en esta carpeta funcionaran bajo el servidor http. Si se ejecuta archivos que esten en subdirectorios dentro de la rama raiz tambien se veran afectados, sin embargo, si se ejecuta archivos que esten sobre la rama raiz, se encontrara con errores en la ejecucion de la pagina web.
+Software de validacion que permite conocer si una pagina web tiene errores no.
 
 <p align="center">
-<img src="https://github.com/faxa94/JavaScript/blob/css/Informe/imagenes%20css%20y%20bootstrap/3.png?raw=true" width="500" height="300">
+<img src="https://github.com/faxa94/JavaScript/blob/bootstrap/Informe/imagenes/a2.PNG?raw=true" width="500" height="300">
 </p>
 ### Descripcion
-Utilizando el inspeccionar de objetos de chrome se revisa la estructura de la pagina web creado, y se identifica los diferentes componentes del archivo como son el tag del body, html, titulos y parrafos. El body tiene un color verde, los titulos declarados por el selector h1, estan pintados de plomo, los parrafos estan pintados de colores rojo, amarillo, azul, correspondientes al id igual a rojo, amarillo y azul del tag 'p'.
-
-Para su implementacion se propuso dentro del head un link de referencia a un archivo css, el cual conteniene todos los estilos presentes en el sitio web. Se puede referenciar de dos maneras:
-* Usando un archivo dentro de la computadora
-* Direccionando a una servidor que contiene dicho fichero
-```
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-```
+Go Daddy es una empresa registradora de dominios de Internet y de alojamiento web o hosting.
 
 <p align="center">
-<img src="https://github.com/faxa94/JavaScript/blob/css/Informe/imagenes%20css%20y%20bootstrap/6.png?raw=true" width="500" height="300">
+<img src="https://github.com/faxa94/JavaScript/blob/bootstrap/Informe/imagenes/a3.PNG?raw=true" width="400" height="150">
 </p>
 ### Descripcion
-Se utilizo el framework bootstrap, y mediante la utilizacion de la clase col-sm-3 se creo 3 columnas
+La propiedad alt permite a objetos como imagenes ser identificadas por aquellas personas que no pueden ver o tienes algun impedimiento fisico. Esto provoca mayor accesibilidad a una pagina web.
 ```html
 <div class="col-sm-3 border">
         <h3>col sm3 2</h3>
@@ -139,20 +162,14 @@ Se utilizo el framework bootstrap, y mediante la utilizacion de la clase col-sm-
 ```
 De la misma manera en la siguiente fila se utiliza la clase col-lg-6 para crear dos columnas
 ```
-    <div class="col-lg-6 borde">
-        <h3>col lg 1</h3>
-    </div>
+
+<img src="smiley.gif" alt="Smiley face" width="42" height="42">
 
 ```
-En la siguiente columna se hizo uso de la clase col-xs-5 para crear dos columnas
-```
- <div class="row col-xs-5 border">
-            <h2>col xs 5</h2>
-        </div>
-```
+
 
 <p align="center">
-<img src="https://github.com/faxa94/JavaScript/blob/css/Informe/imagenes%20css%20y%20bootstrap/1.png?raw=true" width="500" height="300">
+<img src="https://github.com/faxa94/JavaScript/blob/bootstrap/Informe/imagenes/a4.PNG?raw=true" width="500" height="300">
 </p>
 ###Descripcion
 Para los colores se utilizaron estilos definidos por el framework de bootstrap, de esta forma se tiene diferentes metodos para poner color a una clase, un selector y a un id.
