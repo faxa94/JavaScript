@@ -5,38 +5,58 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script>
-        
-        var arregloNumero=[];
-        var count=0;
+        var arregloNumero = [];
+        var count = 0;
         console.log(count);
-        while(count<10){
+        while (count <= 10) {
             console.log(count);
-            if(count%2===0){
-                console.log('El numero:'+count+' es par');
-            }else{
-                console.log('El numero:'+count+' es impar');
+            if (count < 11 && count > 2) {
+                if (count % 2 === 0) {
+                    console.log('El numero:' + count + ' es par');
+                } else {
+                    console.log('El numero:' + count + ' es impar');
+                }
             }
             arregloNumero.push(count);
             count++;
         }
         arregloNumero.pop();
-        arregloNumero.splice(0,1);
+        arregloNumero.splice(0, 1);
         console.log(arregloNumero);
-        
-        var oveja=4;
-        var mes=1;
-        var totalmeses=12;
-        for(mes;totalmeses>=mes;mes++){
-            oveja*=4;
-           console.log('There will '+oveja+' mes '+mes);
-        }
-        
+
+        var oveja = 4;
+        var mes = 1;
+        var totalmeses = 12;
+        for (mes; totalmeses >= mes; mes++) {
+            oveja *= 4;
+         
+              if(oveja >1000){
+                oveja=oveja/2;
+            }      
+            if(oveja%4===0){
+                oveja=oveja*0.75;
+            }       
+            console.log('There will ' + oveja + ' mes ' + mes);
+        };
        
-        
+       
+        function nn(){
+            var respuesta1= parseInt(prompt("primero"));
+             var respuesta2= parseInt( prompt("segundo"));
+             var respuesta3= parseInt(prompt("tercero"));
+            var tt= respuesta1*respuesta2*respuesta3;
+            console.log(tt); 
+        }
+         console.log(parseInt(nn()));
+        function nn1(x,y){
+            return (4*x*y+3*y+5);
+        }
+        console.log(nn1(4,7));
     </script>
 </head>
+
 <body>
-   
+
 
 </body>
 
