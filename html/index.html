@@ -5,12 +5,23 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script>
+        
+        var arregloNumero=[];
         var count=0;
         console.log(count);
         while(count<10){
             console.log(count);
+            if(count%2===0){
+                console.log('El numero:'+count+' es par');
+            }else{
+                console.log('El numero:'+count+' es impar');
+            }
+            arregloNumero.push(count);
             count++;
         }
+        arregloNumero.pop();
+        arregloNumero.splice(0,1);
+        console.log(arregloNumero);
     </script>
 </head>
 <body>
