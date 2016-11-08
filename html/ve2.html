@@ -1,103 +1,98 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  .list-group-item{
-      background: #E6E3E2;
-      margin-left: 5px;
-      width:207px;
-       border-top-color: #E6E3E2;
-       border-right-color: #E6E3E2;
-       border-bottom-color: #E6E3E2;
-       border-left-color: #E6E3E2;
-       padding: 1px 1px 1px 1px;
-   }
-   .contener {
-    height: 640px;
-    width: 215px;
-    border: 1px solid #ACA9A7;
-   }
-   .div1{
-    height: 630px;
-     border-top-color: yellow;
-     padding-top: 100px;
-     padding-left:300px;
-   }
-   .navbar{
-    margin-bottom: 0px;
-   }
-   .clase1{
-    padding-top: 10px;
-    height: 400px;
-   }
-   .form-group1{
-     margin-top: 5px
-   }
-  </style>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .list-group-item {
+            background: #E6E3E2;
+            margin-left: 5px;
+                width: 100%;
+            border-top-color: #E6E3E2;
+            border-right-color: #E6E3E2;
+            border-bottom-color: #E6E3E2;
+            border-left-color: #E6E3E2;
+            padding: 1px 1px 1px 1px;
+        }
+        
+        .conteiner-right {
+            background-color: #E6E3E2;
+            height: 640px;
+            width: 100%;
+            padding-left: 10px;
+        }
+        
+        .div1 {
+            height: 630px;
+            border-top-color: yellow;
+            padding-top: 100px;
+            padding-left: 300px;
+        }
+        
+        .navbar {
+            margin-bottom: 0px;
+        }
+        
+        .clase1 {
+            padding-top: 10px;
+            height: 400px;
+        }
+        
+        .form-group1 {
+            margin-top: 5px
+        }
+    </style>
 </head>
+
 <body>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Page 1</a></li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="row">
-  <div class="col-md-2" style="background-color:#E6E3E2;">
-    <div class="contener">     
-       <br><img class="center-block"  src="img\1.png" class="img-rounded" alt="Cinque Terre" width="150" height="50" align="middle">
-        <br><h4>Informacion Personal</h4>
-	    <div class="list-group">
-         <a href="#" class="list-group-item">Mi perfil</a>
-         <a href="ve1.html" class="list-group-item">Fotos</a>
-         <a href="#" class="list-group-item">Publicaciones</a>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header"> <a class="navbar-brand" href="#">WebSiteName</a> </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
         </div>
-        <h4>Usuario</h4>
-        <div class="list-group">
-         <a href="#" class="list-group-item">Usuario</a>
+    </nav>
+    <div class="row">
+        <div class="col-md-2" style="border: 1px solid #ACA9A7; background-color:#E6E3E2;">
+            <div class="conteiner-right">
+                <br><img class="center-block" src="img\1.png" class="img-rounded" alt="Cinque Terre" width="150" height="50" align="middle">
+                <br>
+                <h4>Informacion Personal</h4>
+                <div class="list-group"> <a href="#" class="list-group-item">Mi perfil</a> <a href="ve1.html" class="list-group-item">Fotos</a> <a href="#" class="list-group-item">Publicaciones</a> </div>
+                <h4>Usuario</h4>
+                <div class="list-group"> <a href="#" class="list-group-item">Usuario</a> </div>
+                <h4>Idioma</h4>
+                <div class="list-group"> <a href="#" class="list-group-item">Cargar Traduccion</a> </div>
+            </div>
         </div>
-        <h4>Idioma</h4>
-        <div class="list-group">
-         <a href="#" class="list-group-item">Cargar Traduccion</a>
-        </div>
-    </div>
-  </div>
-  <div class="col-md-10" style="background-color:#E6E3E2;">
-         <div class="col-md-9" style="background-color:#E6E3E2;"><h4>Descripcion</h4></div>
-         <div class="input-group col-md-3">
-                    <input type="text" class="form-control input-md" placeholder="Buscar" />
-                    <span class="input-group-btn">
+        <div class="col-md-10" style="background-color:#E6E3E2;">
+            <div class="col-md-9" style="background-color:#E6E3E2;">
+                <h4>Descripcion</h4></div>
+            <div class="input-group col-md-3">
+                <input type="text" class="form-control input-md" placeholder="Buscar" /> <span class="input-group-btn">
                         <button class="btn btn-info btn-md" type="button">
                             <i class="glyphicon glyphicon-search"></i>
                         </button>
-                    </span>
-         </div>
-   </div>
-   <div class="col-md-10" style="background-color:#E6E3E2;">     
-         <div class="col-md-10" style="background-color:#E6E3E2;"></div>
-         <div class="btn-group col-md-1">
-                    <span class="input-group-btn">
+                    </span> </div>
+        </div>
+        <div class="col-md-10" style="background-color:#E6E3E2; border-bottom : 1px solid #ACA9A7;"">
+            <div class="col-md-10" style="background-color:#E6E3E2;"></div>
+            <div class="btn-group col-md-1"> <span class="input-group-btn">
                         <button class="btn btn-primary btn-md" type="button">
                             <i class="glyphicon glyphicon-cloud"></i>
                         </button>
@@ -110,131 +105,141 @@
                         <button class="btn btn-primary btn-md" type="button">
                             <i class="glyphicon glyphicon-off"></i>
                         </button>
-                    </span>
-         </div>
-  </div>
-  <div class="col-md-10"  style="background-color:white;">
-    <div class="clase1"  style="background-color:white;">
-      <div class="row">
-       <div class="col-md-2"  style="background-color:white;">
-           <br><img class="center-block"  src="img\HTML5.png" class="img-rounded" alt="Cinque Terre" width="120" height="120" align="middle">
+                    </span> </div>
         </div>
-       <div class="col-md-4"  style="background-color:white;">
-           <br><input type="bsa" class="form-control" id="pwd" placeholder="Nombre Completo">  
-           <br><button type="button" class="btn btn-primary">Editar</button>  
+        <div class="col-md-10" style="background-color:white;">
+            <div class="clase1" style="background-color:white;">
+                <div class="row">
+                    <div class="col-md-2" style="background-color:white;">
+                        <br><img class="center-block" src="img\HTML5.png" class="img-rounded" alt="Cinque Terre" width="120" height="120" align="middle"> </div>
+                    <div class="col-md-4" style="background-color:white;">
+                        <br>
+                        <input type="bsa" class="form-control" id="pwd" placeholder="Nombre Completo">
+                        <br>
+                        <button type="button" class="btn btn-primary">Editar</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1" style="background-color:white;">
+                        <form class="form-inline">
+                            <div class="form-group1">
+                                <br>
+                                <label for="email">Apellidos:</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4" style="background-color:white;">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <br>
+                                <input type="apellidos" class="form-control" id="apellidos" placeholder=""> </div>
+                        </form>
+                    </div>
+                    <div class="col-md-1" style="background-color:white;">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <br>
+                                <label for="fechanac">Fecha de Nacimiento:</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4" style="background-color:white;">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <br>
+                                <input type="date" name="bday"> </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1" style="background-color:white;">
+                        <form class="form-inline">
+                            <div class="form-group1">
+                                <br>
+                                <label for="nombres">Nombres:</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4" style="background-color:white;">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <br>
+                                <input type="nombres" class="form-control" id="nombres" placeholder=""> </div>
+                        </form>
+                    </div>
+                    <div class="col-md-1" style="background-color:white;">
+                        <form class="form-inline">
+                            <div class="form-group1">
+                                <br>
+                                <label for="ocupacion">Ocupacion:</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4" style="background-color:white;">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <br>
+                                <input type="ocupacion" class="form-control" id="ocupacion" placeholder=""> </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1" style="background-color:white;">
+                        <form class="form-inline">
+                            <div class="form-group1">
+                                <br>
+                                <label for="estado">Estado:</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4" style="background-color:white;">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <br>
+                                <input type="apellidos" class="form-control" id="apellidos" placeholder=""> </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1" style="background-color:white;">
+                        <form class="form-inline">
+                            <div class="form-group1">
+                                <br>
+                                <label for="email">Email:</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4" style="background-color:white;">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <br>
+                                <input type="email" class="form-control" id="email" placeholder="Enter Email"> </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <br>
+                    <div class="col-md-12" style="background-color:black;"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1" style="background-color:white;">
+                        <form class="form-inline">
+                            <div class="form-group1">
+                                <br>
+                                <label for="comentario">Cometario:</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6" style="background-color:white;">
+                        <div class="form-group">
+                            <br>
+                            <textarea class="form-control" rows="3" id="comment"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-         <div class="col-md-1"  style="background-color:white;">
-             <form class="form-inline">
-               <div class="form-group1">
-                   <br><label for="email">Apellidos:</label>
-               </div>
-             </form>           
-        </div>
-        <div class="col-md-4"  style="background-color:white;">
-             <form class="form-inline">
-               <div class="form-group">
-                   <br><input type="apellidos" class="form-control" id="apellidos" placeholder="">
-               </div>
-             </form>           
-        </div>
-        <div class="col-md-1"  style="background-color:white;">
-             <form class="form-inline">
-               <div class="form-group">
-                   <br><label for="fechanac">Fecha de Nacimiento:</label>
-               </div>
-             </form>           
-        </div>
-        <div class="col-md-4"  style="background-color:white;">
-             <form class="form-inline">
-               <div class="form-group">
-                   <br><input type="date" name="bday">
-               </div>
-             </form>           
-        </div>
-      </div>
-    <div class="row">
-         <div class="col-md-1"  style="background-color:white;">
-             <form class="form-inline">
-               <div class="form-group1">
-                   <br><label for="nombres">Nombres:</label>
-               </div>
-             </form>           
-        </div>
-        <div class="col-md-4"  style="background-color:white;">
-             <form class="form-inline">
-               <div class="form-group">
-                   <br><input type="nombres" class="form-control" id="nombres" placeholder="">
-               </div>
-             </form>           
-        </div>
-        <div class="col-md-1"  style="background-color:white;">
-             <form class="form-inline">
-               <div class="form-group1">
-                   <br><label for="ocupacion">Ocupacion:</label>
-               </div>
-             </form>           
-        </div>
-        <div class="col-md-4"  style="background-color:white;">
-             <form class="form-inline">
-               <div class="form-group">
-                   <br><input type="ocupacion" class="form-control" id="ocupacion" placeholder="">
-               </div>
-             </form>           
-        </div>
-      </div>
-     <div class="row">
-         <div class="col-md-1"  style="background-color:white;">
-             <form class="form-inline">
-               <div class="form-group1">
-                   <br><label for="estado">Estado:</label>
-               </div>
-             </form>           
-        </div>
-        <div class="col-md-4"  style="background-color:white;">
-             <form class="form-inline">
-               <div class="form-group">
-                   <br><input type="apellidos" class="form-control" id="apellidos" placeholder="">
-               </div>
-             </form>           
-        </div>
-      </div>
-      <div class="row">
-         <div class="col-md-1"  style="background-color:white;">
-             <form class="form-inline">
-               <div class="form-group1">
-                   <br><label for="email">Email:</label>
-               </div>
-             </form>           
-        </div>
-        <div class="col-md-4"  style="background-color:white;">
-             <form class="form-inline">
-               <div class="form-group">
-                   <br><input type="email" class="form-control" id="email" placeholder="Enter Email">
-               </div>
-             </form>           
-        </div>
-       </div>
-       <div class="row">
-         <br><div class="col-md-12"  style="background-color:black;"></div>
-       </div>
-       <div class="row">
-         <div class="col-md-1"  style="background-color:white;">
-             <form class="form-inline">
-               <div class="form-group1">
-                   <br><label for="comentario">Cometario:</label>
-               </div>
-             </form>           
-        </div>
-        <div class="col-md-6"  style="background-color:white;">
-               <div class="form-group">
-                   <br><textarea class="form-control" rows="3" id="comment"></textarea>
-               </div>  
-        </div>
-       </div>
-      </div>
     </div>
-  </div>
 </body>
+
 </html>
