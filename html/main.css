@@ -1,0 +1,18 @@
+﻿.centrado{
+    color: red;	
+    text-align:center;
+}
+h1 {
+ color: #770022;
+ margin: 15px 0 15px 0;
+ border-bottom: 1px solid #cc00cc;
+ padding-bottom: 3px;
+}
+.ordenado{
+ font: 150% sans-serif;
+ color: #dd7711;
+}
+.desordenado{
+  font: oblique bold 120% cursive;
+  color: #dd7700;
+}

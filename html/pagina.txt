@@ -1,0 +1,9 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="main.css">
+  </head>
+    <body>
+	<h1> TAG HTML </h1>
+	  <p> Descrpcion al browser que viene un archivo html</p>
+    <body>
+</html>
