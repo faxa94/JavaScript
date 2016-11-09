@@ -54,14 +54,22 @@
         console.log(nn1(4,7));
         
         
-        var pas=[["aaaaa","bbbb"],
-                 ["ccccc","ddddd"],
-                 ["ffff","eeeee"],
-                 ["xxxx","zzzzzz"]];
-        var modi= pas.map(function(arrayNombreApellido){
-            alert(arrayNombreApellido);
-        });
-                          console.log(modi);
+        var pas=[function(input){
+                     return 3*input-8;
+                 },
+                 function(input){
+                     return (input+2)*(input+2)
+                 },
+                 function(input){
+                     return (input+2)-9
+                 },
+                 function(input){
+                     return (input+2)-(input+2)
+                 }];
+                console.log(pas[0](5));
+        console.log(pas[1](5));
+        console.log(pas[2](5));
+        console.log(pas[3](5));
     </script>
 </head>
 
