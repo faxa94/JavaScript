@@ -19,6 +19,7 @@ var usuarios = [
         cedula:'011283934'
     }
 ]
+usaurios.push
 app.get('/miservicio/:id',function(req,res){
 	var idact=req.params.id;
     for(var i=0;i<3;i++){
