@@ -10,5 +10,9 @@
     "calculadora"
   ],
   "author": "andres",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {}
 }
