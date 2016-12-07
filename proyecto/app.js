@@ -1,9 +1,8 @@
 var express = require('express');
 var fs= require('fs');
-fs.readFile('')
-fs.readFile('./paginas/pagina.html','utf8', function(error, archivoleido){
+fs.readFile('/paginas/pagina.html','utf8', function(error, archivoleido){
     console.log(error+' '+archivoleido);
-} )
+} );
 
 var app = express();
 
