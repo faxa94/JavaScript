@@ -1,31 +1,61 @@
-var e=require('express');
-var app=e();
+@@ -35,8 +35,6 @@ app.get('/Usuario', function (req, res) {
+})
 
-//app.use(e.static(__dirname+'/public'));
-var usuarios = [
-    {
-        id:1,
-        nombre:'Pepe',
-        cedula:'123409182'
-    },
-    {
-        id:2,
-        nombre:'Carlos',
-        cedula:'981237918'
-    },
-    {
-        id:3,
-        nombre:'Juan',
-        cedula:'011283934'
+
+
+
+app.get('/Usuario/:idUsuario', function (req, res) {
+    
+    var idActual = req.params.idUsuario;
+@@ -54,42 +52,6 @@ app.get('/Usuario/:idUsuario', function (req, res) {
+    
+})
+
+app.post('/Usuario', function (req, res) {
+    
+    
+    console.log(req.query.nombre);
+    
+    console.log(req.query.cedula);
+    
+    if(!req.query.nombre){
+        res.send('No envio el nombre');
     }
-]
-usaurios.push
-app.get('/miservicio/:id',function(req,res){
-	var idact=req.params.id;
-    for(var i=0;i<3;i++){
-        if(idact==usuarios[i].id){
-            res.json(usuarios[i])
-        }
+    
+    if(!req.query.cedula){
+        res.send('No envio la cedula');
     }
-});
-var server=app.listen(8090);
+    
+    var nuevoUsuario = {
+        id:contador+1,
+        nombre:req.query.nombre,
+        cedula:req.query.cedula
+    }
+    usuarios.push(nuevoUsuario);
+    contador = contador++;
+    res.json(nuevoUsuario)
+
+//    //Deprecated
+//    console.log(req.param('nombre'));
+//    
+//    //Busca el parametro nombre
+//    console.log(req.query.nombre);
+//    
+//    //Parametros URL
+//    //console.log(req.params);
+//
+//    res.json(usuarios);
+    
+})
+
+app.post('/Usuario', function (req, res) {
+    
+@@ -112,7 +74,7 @@ app.post('/Usuario', function (req, res) {
+        cedula:req.query.cedula
+    }
+    usuarios.push(nuevoUsuario);
+    contador = contador++;
+    contador = contador+1;
+    res.json(nuevoUsuario)
+
+//    //Deprecated
