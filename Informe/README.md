@@ -1,10 +1,10 @@
-# Diseño, calidad, WAI, Validación, Seo
+# NPM
 ### Materia : `Tecnologías Web con JavaScript`
-### Tema : `CSS` 
-### Fecha : `2016-11-05`
+### Tema : `NPM` 
+### Fecha : `2016-12-08`
 ### Estudiante : `Andres Fabricio Chasiliquin Armendariz`
 ### Profesor : `Tania Calle - Adrian Eguez`
-### Número de informe : `3`
+### Número de informe : `4`
 <a name="cabecera"></a>
 ## Índice de contenidos
 
@@ -12,30 +12,27 @@
 - <a href="#tema">Tema</a>
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco-teorico">Marco Teorico</a>
-  * <a href="#tema1">DISEÑO</a>
-  * <a href="#tema2">PLUGINS</a>
-  * <a href="#tema3">CALIDAD WEB</a>
-  * <a href="#tema4">HTML5</a>
-  * <a href="#tema5">CSS3</a>
-  * <a href="#tema6">VALIDACION WEB</a>
-  * <a href="#tema7">FORMATO DE FECHAS</a>
-  * <a href="#tema8">SEO</a>
-  * <a href="#tema9">TCP/IP</a>
-  * <a href="#tema10">HOSTING</a>
+  * <a href="#tema1">NODE.JS</a>
+  * <a href="#tema2">NPM</a>
+  * <a href="#tema3">PAQUETE EXPRESS</a>
+  * <a href="#tema4">METODOS HTTP</a>
+  * <a href="#tema5">JSON</a>
+  * <a href="#tema6">ARQUITECTURA REST</a>
+
   
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 
 <a name="tema"></a>
 ## Tema
-`Diseño, calidad, WAI, Validación, Seo`
+``
 
 
 <a name="objetivos"></a>
 ## Objetivos
-- Interpretar los concepto de validadcion, calidad y accesibilidad web.
-- Conocer las tecnicas implementadas para la accesibilidad web
-- Fomentar el conocimiento de los software de validadcion web y hosting
+- Conocer el sistema de paquetes NPM
+- Desarrollo de una aplicacion orientada a un servidor node.js
+- Fomentar el conocimineto sobre la estructuracion de los paquetes NPM
 
 
 <a name="marco-teorico"></a>
@@ -44,165 +41,178 @@
 
 
 <a name="tema1"></a>
-### DISEÑO 
-Las páginas web deben tener la menor cantidad de contenido haciendo que su tiempo de respuesta sea menor al usuario a través de su navegador web.  Un navegador web es un software, aplicación o programa que permite el acceso a la Web, interpretando la información de distintos tipos de archivos y sitios web para que estos puedan ser visualizados.
+### NODE.JS
+Es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor. Esta basado en el lenguaje de programación ECMAScript, asíncrono en una arquitectura orientada a eventos. Fue creado con el enfoque de ser útil en la creación de programas de red altamente escalables.
 
-
-Tiempo de respuesta: Es el tiempo medio que se demora un paquete tcp/ip en comunicarse con un servidor y traer su respuesta a un determinado host. Este puede varias dependiendo de varios factores como el tamaño del paquete, el ancho de banda de la red entre otras.
-(Fuente: [kurose: Computer networking a top-down approach])
+V8 es el entorno de ejecución para JavaScript creado para Google Chrome sobre el cual funciona Node.js. 
+(Fuente: [wikipedia: https://es.wikipedia.org/wiki/Node.js#V8])
 
 
 <a name="tema2"></a>
 
-### PLUGINS
-Es una aplicación o programa informático que se relaciona con otra para agregarle una función nueva y generalmente muy específica. Esta aplicación adicional es ejecutada por la aplicación principal e interactúan por medio de la interfaz de programación de aplicaciones
+### NPM
+Es el gestor por defecto de paquetes que utiliza JavaScript para entornos de ejecución como Node.js.
 
-(Fuente: [wikipedia](https://es.wikipedia.org/wiki/Complemento_(inform%C3%A1tica)))
+NPM consiste en una línea de comandos para el cliente, el cual interactúa con un registro remoto. Permite a los usuarios consumir y distribuir los módulos de JavaScript que están disponibles en ese registro. 
+
+Los paquetes en el registro están en formato CommonJS, e incluyen un fichero de metadatos en formato JSON.
+
+(Fuente: [wikipedia](https://en.wikipedia.org/wiki/Npm_(software))
 
 <a name="tema3"></a>
-### CALIDAD WEB
-La utilización de nuevos estándares web mejoran la calidad en la misma. Un estándares web define las técnicas que describen aspectos de la World Wide Web. En años recientes, el término ha sido frecuentemente asociado con la tendencia de aprobar un conjunto de mejores prácticas estandarizadas para construir sitios web de calidad.
+### EXPRESS
+Es una infraestructura de aplicaciones web Node.js mínima y flexible que proporciona un conjunto sólido de características para las aplicaciones web y móviles.
 
-(Fuente: [wikipedia](https://es.wikipedia.org/wiki/Est%C3%A1ndares_web))
+(Fuente: [express](http://expressjs.com/es/))
 
 
 <a name="tema4"></a>
-### HTML5
-HTML5  es la última versión de HTML. El término representa dos conceptos diferentes:
+### METODOS HTTP
+Forman parte del formato de mensajes http tanto para solicitud y respuesta en una arquitectura cliente servidor. Los mensajes para una solicitud estan generados en dos partes:
 
-* Se trata de una nueva versión de HTML, con nuevos elementos, atributos y comportamientos.
+Linea de Solicitud: En esta parte del mensaje se entra los metodos http para una peticion, tambien se encuentra el url y la version http utilizada por el browser. Ej(get /unidireecion/pagina.html HTTP/1.1). Los metodos mas comunes son:
 
-* Contiene un conjunto más amplio de tecnologías que permite a los sitios Web y a las aplicaciones ser más diversas y de gran alcance. 
+*   Post: Se utiliza para el llenado de formularios por parte del browser, es decir cuando el usuario llena un determinado formulario con su nombre y contrasena, y envia para su acceso, el metodo post recoge esta informacion y la incorpora dentro de un objeto para enviarla al servidor.
+* Get: Metodo utilizado para solicir un objeto, en otras palabras una pagina web, un archiv, una descarga, un video.
+* Head: SE la utiliza comunmente para depuracion, su particularidad es evitar que los objetos se envien dentro de una peticion http, es decir si el usuario lleno un formulario, la informacion incorporada dentro de este no se envia.
+* Put: Se utiliza para cargar los objetos de una ruta especifica (directorio) de un servidor web.
+* Delete: Elimina objetos de un servidor web especificando la ruta o directorio raiz.
 
-Ventajas:
-* Semántica: Permite describir con mayor precisión cual es su contenido.
-
-* Conectividad: Permite comunicarse con el servidor de formas nuevas e innovadoras.
-
-* CSS3: Nos ofrece una nueva gran variedad de opciones para hacer diseños más sofisticados.
-
-* Rendimiento e Integración: Proporciona una mayor optimización de la velocidad y un mejor uso del hardware.
-
-(Fuente: [mozilla](https://developer.mozilla.org/es/docs/HTML/HTML5))
+(Fuente: [James F. Kurose and Keith W. Ross, Computer Networking, A Top-Down Approach Featuring the Internet])
 <a name="tema5"></a>
 
-### CSS3
-Es un lenguaje de hojas de estilo para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado . Es muy usado para establecer el diseño visual de las páginas web, e interfaces de usuario escritas en HTML o XHTML.
+### JSON
+Es un formato ligero de intercambio de datos. Está basado en un subconjunto del Lenguaje de Programación JavaScript, Standard ECMA-262 3rd. JSON es un formato de texto que es completamente independiente del lenguaje de programacion. Estas propiedades hacen que JSON sea un lenguaje ideal para el intercambio de datos.
 
-(Fuente: [Wipedia](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada))
+JSON está constituído por dos estructuras:
+
+* Una colección de pares de nombre/valor.
+* Una lista ordenada de valores.
+
+(Fuente: [json](http://www.json.org/json-es.html))
 
 
 <a name="tema6"></a>
-### VALIDACION WEB
-La validación es el proceso que asegura que un documento escrito en un determinado lenguaje (por ejemplo XHTML) cumple con las normas y restricciones de ese lenguaje. Las normas y restricciones de los documentos escritos en XML  se definen en el DTD o Document Type Definition ("Definición del Tipo de Documento").
+### ARQUITECTURA REST
+REST es un estilo de arquitectura software para sistemas hipermedia distribuidos como la World Wide Web.  
 
-Un validador es un programa de software que se pueden ver sus páginas web en contra de los estándares web.
-
-Cuando se utiliza un dispositivo de validación para comprobar los documentos HTML, XHTML o CSS, el validador devuelve una lista de los errores encontrados, de acuerdo con el estándar elegido.
+Se usa para describir cualquier interfaz entre sistemas que utilice directamente HTTP para obtener datos o indicar la ejecución de operaciones sobre los datos, en cualquier formato XML, JSON sin las abstracciones adicionales de los protocolos basados en patrones de intercambio de mensajes, como por ejemplo SOAP.
 
 
- (Fuente: [libros web](http://librosweb.es/libro/xhtml/capitulo_13.html))
+ (Fuente: [wikipedia](https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional))
  
-<a name="tema7"></a>
-### FORMATO DE FECHAS
-El formato internacional definido por ISO (IS0 8601) intenta encauzar todos estos problemas definiendo un sistema numérico de fechas. Utilizar fechas numéricas tiene también algunos peligros en relación con la legibilidad y la usabilidad.
-(Fuente: [w3school](http://w3schools.bootcss.com/website/web_quality.html))
-
-<a name="tema8"></a>
-### SEO Search Engine Optimization
-Es el proceso técnico mediante el cual se realizan cambios en la estructura e información de una página web, con el objetivo de mejorar la visibilidad de un sitio web en los resultados orgánicos de los diferentes buscadores.
-
- (Fuente: [wikipedia](https://en.wikipedia.org/wiki/Search_engine_optimization))
-
-<a name="tema9"></a>
-### TCP/IP
-La familia de protocolos de Internet es un conjunto de protocolos de red en los que se basa Internet y que permiten la transmisión de datos entre computadoras.
-
-* FTP (File Transfer Protocol), Protocolo de Transferencia de Archivos, para transferencia de archivos o ficheros.
-
-* HTTP (HyperText Transfer Protocol), Protocolo de Transferencia de HiperTexto, que es popular porque se utiliza para acceder a las páginas web.
-
-* SMTP (Simple Mail Transfer Protocol), Protocolo de Transferencia Simple de Correo, para correo electrónico.
-
-(Fuente: [wikipedia](https://es.wikipedia.org/wiki/Familia_de_protocolos_de_Internet))
-
-<a name="tema10"></a>
-### HOSTING
-Es el servicio que provee a los usuarios de Internet un sistema para poder almacenar información, imágenes, vídeo, o cualquier contenido accesible vía web.
- (Fuente: [wikipedia](https://es.wikipedia.org/wiki/Alojamiento_web))
-
 
 
 <a name="desarrollo"></a>
 ## Desarrollo del informe
 <p align="center">
-<img src="https://github.com/faxa94/JavaScript/blob/bootstrap/Informe/imagenes/a1.PNG?raw=true" width="500" height="300">
+<img src="https://github.com/faxa94/JavaScript/blob/servidor/Informe/imagenes/Captura.PNG?raw=true" width="500" height="300">
 </p>
 ### Descripcion
-Software de validacion que permite conocer si una pagina web tiene errores o no.
+Se instala el paquete express, utilizando la llamada npm a traves de la linea de comandos de node.js.
 
 <p align="center">
-<img src="https://github.com/faxa94/JavaScript/blob/bootstrap/Informe/imagenes/a2.PNG?raw=true" width="500" height="300">
+<img src="https://github.com/faxa94/JavaScript/blob/servidor/Informe/imagenes/Captura6.PNG?raw=true" width="500" height="300">
 </p>
 ### Descripcion
-Go Daddy es una empresa registradora de dominios de Internet y de alojamiento web o hosting.
+Se instala el npm express-generator. El resultado final es la creacion del paquete json ubicado en la ruta donde se definio la instalacion.
 
 <p align="center">
-<img src="https://github.com/faxa94/JavaScript/blob/bootstrap/Informe/imagenes/a3.PNG?raw=true" width="400" height="150">
+<img src="https://github.com/faxa94/JavaScript/blob/servidor/Informe/imagenes/Captura1.PNG?raw=true" width="400" height="150">
 </p>
 ### Descripcion
-La propiedad alt permite a objetos como imagenes ser identificadas por aquellas personas que no pueden ver o tienes algun impedimiento fisico. Esto provoca mayor accesibilidad a una pagina web.
-```html
-<img src="smiley.gif" alt="Smiley face">
+Creacion de una cuenta NPM para el almacenamiento de paquetes locales, es decir aquellos archivos javascript que deseamos compartir como un servicio web.
+
+<p align="center">
+<img src="https://github.com/faxa94/JavaScript/blob/servidor/Informe/imagenes/Captura3.PNG?raw=true" width="400" height="150">
+</p>
+### Descripcion
+Ejecucion en la parte del cliente de un mensaje retornado por el servidor. El puerto por el cual escucha las peticiones el servidor es el 6060.
+
+Para el retorno del mensaje el servidor utiliza el metodo get.
+
+```javascript
+var express = require('express');
+var app = express();
+var puerto = 6060;
+app.get('/', function (req, res) {
+    res.send('Bienvenidos al Api de Usuarios!')
+})
 ```
 
 <p align="center">
-<img src="https://github.com/faxa94/JavaScript/blob/bootstrap/Informe/imagenes/a4.PNG?raw=true" width="500" height="300">
+<img src="https://github.com/faxa94/JavaScript/blob/servidor/Informe/imagenes/Captura4.PNG?raw=true" width="500" height="300">
 </p>
-###Descripcion
-El framework bootstrap proporciona propiedades utiles en el desarrolo de sitios web como lo son los grid, tables, forms entre otros.
-Para la creacion de una tabla se utiliza los tags table, tr y td. 
+### Descripcion
+Creacion de un json con los atributos id, nombre, cedula. El cliente muestra todos los registros almacenados por el servidor si solo se ingrese dentro del URL el objeto Usuario.
 
-* Table: Especifica el inicio y fin de la tabla.
-
-* tr: filas de la tabla.
-
-* td: columna de la tabla.
-
-* th: Son los titulos para cada columna de la tabla
+Utilizacion del metodo post.
 
 ```
-     <table class="table table-hover">
-        <tr class="active">
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Country</th>
-        </tr>
-        <tr class="info">
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-        </tr>
-    </table>
+var usuarios = [
+    {
+        id:1,
+        nombre:'Pepe',
+        cedula:'123409182'
+    },
+    {
+        id:2,
+        nombre:'Carlos',
+        cedula:'981237918'
+    },
+    {
+        id:3,
+        nombre:'Juan',
+        cedula:'011283934'
+    }
+]
+app.post('/Usuario', function (req, res) {
+    console.log(req.query.nombre); 
+    console.log(req.query.cedula);
+    if(!req.query.nombre){
+        res.send('No envio el nombre');
+    }
+    if(!req.query.cedula){
+        res.send('No envio la cedula');
+    }  
+    var nuevoUsuario = {
+        id:contador+1,
+        nombre:req.query.nombre,
+        cedula:req.query.cedula
+    }
+    usuarios.push(nuevoUsuario);
+    contador = contador+1;
+    res.json(nuevoUsuario)
+    
+})
 ```     
-####Dropdown
-Un menú desplegable es un menú conmutable que permite al usuario elegir un valor de una lista predefinida
+
+<p align="center">
+<img src="https://github.com/faxa94/JavaScript/blob/servidor/Informe/imagenes/Captura5.PNG?raw=true" width="500" height="300">
+</p>
+### Descripcion
+El cliente muestra un registro especifico contenido dentro del json almacenado por el servidor.
 
 ``` 
- <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Lista<span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-  </ul>
+app.get('/Usuario/:idUsuario', function (req, res) {
+    
+    var idActual = req.params.idUsuario;
+    
+    for(var i=0;i<usuarios.length;i++){
+        if(idActual == usuarios[i].id){
+            res.json(usuarios[i]);
+        }
+    }
+    res.send('No existe el Usuario');
+    
+})
 ``` 
 
 <a name="conrec"></a>
 ## Conclusiones y Recomendaciones
 
-- La utilizacion de puglins en varios sitios web, permiten a la pagina web tener varios tipos de funcionalidades y no depender del programa fuente. Con la instalacion de los puglins se pueden incorporar dentro de una pagina web  otras funcionalidades independeintes.
-- Los software de validadcion web, son muy utilices para revisar si una pagina tiene dentro de su estructura una corecta funcionalidad de cada una de las partes de su codigo fuente. La desventaja de estos validadores, es que tiene un limite de revision.
-- La accesibilidad web es un tema que esta introducido dentro de la programacion de un sitio web, sin embargo este tipo de accesibilidad como lo es el alt solo estan orientado a ciertas partes de la comunidad discapacitada.
-
+- NPM es una serie de paquetes que estan dentro de la nube, y que se pueden añadir, teniendo una cuenta. De la misma manera se puden descargar cualquier servicio NPM a traves del servidor node.js
+- Para utilizar estructuras json por parte del servidor, se instala los paquetes adecuados para su funcionamiento, como es express-generator.
+- El manejo de los metodos http como son get, post, delete, put, permite al servidor realizar diferentes tareas de acuerdo a las necesidad del programador.
 <br>
 <a href="#cabecera">A la cabecera</a>
