@@ -35,3 +35,15 @@ pipeline
  
  ## Carpeta config
  route
+ 
+ ## generar controladores
+ Para generar controladores se utiliza el siguiente comando
+ ´´´
+ > sails generate controller NombreDElControlador
+ 
+ ´´´
+ ## Carpeta api/controllers
+ crear un controlador que se llame correo
+ dentro de esto se crea un metodo denominado enviar
+ 
+ ## integrar un modulo de node a sails
