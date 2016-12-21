@@ -47,3 +47,18 @@ pipeline
  dentro de esto se crea un metodo denominado enviar
  
  ## integrar un modulo de node a sails
+ 
+ ## Generar apis de en sails.js
+ una api es la funcion de un controlador y un   modelo
+ 
+  ´´´
+ > sails generate api usuarios
+ 
+ ´´´
+ 
+  ## Generar model de en sails.js
+ 
+  ´´´
+ > sails generate model admin
+ 
+ ´´´
