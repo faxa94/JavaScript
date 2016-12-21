@@ -62,3 +62,29 @@ pipeline
  > sails generate model admin
  
  ´´´
+ 
+ ## Comando de confianza
+   ´´´
+ > npm install
+ 
+ ´´´
+ 
+ ## API rest
+ 
+ ### modelo de usuario
+ 
+ CREAR
+ url:
+ ´http//localhost:1337/Usuarios´
+ 
+ ´post´
+ datos:
+ 
+ ´´´javascript
+ //jason
+ {
+    nombre:'mijin',
+        apellido:'lotar',
+        correo:'andre.cas@gmail.com'
+ }
+ ´´´
