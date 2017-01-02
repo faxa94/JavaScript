@@ -1,10 +1,10 @@
- CSS
+Sailsjs - Assets / Views / Pipeline / Controllers
 ### Materia : `Tecnologías Web con JavaScript`
-### Tema : `CSS` 
-### Fecha : `2016-10-31`
+### Tema : `Sailsjs - Assets / Views / Pipeline / Controllers` 
+### Fecha : `2017-01-05`
 ### Estudiante : `Andres Fabricio Chasiliquin Armendariz`
 ### Profesor : `Tania Calle - Adrian Eguez`
-### Número de informe : `2`
+### Número de informe : `5`
 <a name="cabecera"></a>
 ## Índice de contenidos
 
@@ -12,98 +12,76 @@
 - <a href="#tema">Tema</a>
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco-teorico">Marco Teorico</a>
-  * <a href="#tema1">ARCHIVOS CSS</a>
-  * <a href="#tema2">SINTAXIS CSS</a>
-  * <a href="#tema3">COLORES CON CSS</a>
-  * <a href="#tema4">BACKGROUND COLOR</a>
-  * <a href="#tema5">BOOTSTRAP</a>
-  * <a href="#tema6">GRID</a>
-  * <a href="#tema7">TIPOGRAFIA</a>
+  * <a href="#tema1">SAILS.JS</a>
+  * <a href="#tema2">ORM Y MODELOS</a>
+  * <a href="#tema3">ASSETS SAILS</a>
+  * <a href="#tema4">MODELO VISTA CONTROLADOR</a>
+  * <a href="#tema5">VISTAS SAILS</a>
+  * <a href="#tema6">RUTAS SAILS</a>
+  * <a href="#tema7">CONTROLADORES SAILS</a>
+  * <a href="#tema7">PIPELINE SAILS</a>
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 
 <a name="tema"></a>
 ## Tema
-`CSS`
+`Sailsjs - Assets / Views / Pipeline / Controllers`
 
 
 <a name="objetivos"></a>
 ## Objetivos
-- Analizar el contenido del archivo de estilos de una pagina web a travez del inspector de Google Chrome
-- Desarrollar habilidades en la utilizacion de archivos .css
-- Utilizar herramientas para el desarrollo de una pagina web, contenidas dentro del framework bootstrap.
+- Desarrolllar una aplicacion web utilizando el framework web Sails.js.
+- Distinguir los distintos componentes y ficheros que conforman una api Sails.
+- Fomentar el conocimiento en cuanto a la utilizacion de frameworks web para el desarrolo de app.
+
+
+
 
 
 <a name="marco-teorico"></a>
 ## Marco Teorico
 
-
-
 <a name="tema1"></a>
-### ARCHIVOS CSS
-Cascading Stylesheets es un lenguaje de hojas de estilo para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Un lenguaje marcado es aquel que puede ser programado mediante texto, etiquetas y estructuras para su presentacion.
-
-CSS es una tecnologia utiliza en muchas pagianas web para mejorar el aspecto visual de la pagina, mediante la agregacion de transciciones, colores y forma a los objetos web. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada))
+### SAILS.JS
+Sails.js es un un framework MVC para NodeJS pensado para crear aplicaciones modernas y escalables, destaca a la hora de crear aplicaciones en tiempo real ya que incorpora websockets aunque puede ser usado para crear cualquier tipo de aplicación.  (Fuente: [UNO DE PIEDRA](https://www.uno-de-piera.com/introduccion-a-sails-js/))
 
 
 <a name="tema2"></a>
 
-### SINTAXIS CSS
-La aplicacion de formatos a los objetos de una pagina html se debe seguir el siguiente formato:
-####Selector
-    selector {   
-               propiedad1: valor1;            
-               propiedad2: valor2;            
-    }
-    
-Donde tag, es un selector utilizado para identificar algun objeto. Propiedad son los atributos que se desean modificar y por ultimo el valor esta relacionado con los valores aceptables de una propiedad.
-
-####Selector ID
-    #selector {   
-               propiedad1: valor1;            
-               propiedad2: valor2;            
-    }
-    
-El selector ID es un atributo que identifica de manera unica a un objeto. Para el caso de selectores ID se debe interponer antes del selector el simbolo numeral. 
-
-####Selector de Clase
-    .selector {   
-               propiedad1: valor1;            
-               propiedad2: valor2;            
-    }
-    
-El selector de clase refenrecnia a los elemento de una clase especifica. Para el caso de selectores de clase se debe interponer antes del selector, un punto.(Fuente: [w3school](http://www.w3schools.com/css/css_syntax.asp))
+### ORM y MODELOS
+Sails viene instalado con un potente ORM / ODM llamada waterline , una herramienta de almacén de datos independiente del que simplifica enormemente la interacción con una o más bases de datos . Se proporciona una capa de abstracción en la parte superior de la base de datos subyacente, lo que le permite consultar y manipular sus datos de forma sencilla y sin necesidad de escribir código integración específica del proveedor.
+(Fuente: [wikipedia](http://www.w3schools.com/css/css_syntax.asp))
 
 <a name="tema3"></a>
-### COLORES CON CSS
-Existen dos maneras de inponer un color:
-* Notacion Hexadecimal: Es una forma de representar los colores que vemos cada día en un formato que un ordenador puede interpretar y mostrar. ESta compuesto por tres bytes, donde cada byte esta en notacion hexadecimal. Su formtao es: #rojo,verde,azul.
-* Palabras Reservadas: Algunos de los colores mas usados son referenciado por su nombre, de esta manera resulta mas facil utilizar dicho color sin su representacion hexadecimal.(Fuente: [HtmlColores](http://htmlcolorcodes.com/es/))
+### ASSETS SAILS
+Se refiere a los archivos estaticos con los cuales el servidor accede a l intenert. Su contenido en sails esta localizado en una carpeta con el mismo nombre. Tiene la cualidad que los archivos dentro de la carpeta assets pueden ser modificables.(Fuente: [sails](http://sailsjs.com/documentation/concepts/assets))
 
 
 <a name="tema4"></a>
-### BACKGROUND COLOR
-Propiedad que especifica el color de fondo de un elemento. Sintaxis:
-background-color: color;
-Existen al igual que color dos formatos para su especificacion.(Fuente: [w3school](http://www.w3schools.com/css/css_background.asp))
+### MODELO VISTA CONTROLADOR
+El modelo–vista–controlador (MVC) es un patrón de arquitectura de software, que separa los datos y la lógica de negocio de una aplicación de la interfaz de usuario y el módulo encargado de gestionar los eventos y las comunicaciones.(Fuente: [wikipedia](https://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador))
 <a name="tema5"></a>
 
-### BOOTSTRAP
-Es un framework o conjunto de herramientas de Código abierto para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía, formularios, y otros elementos de diseño basado en HTML y CSS, así como, extensiones de JavaScript opcionales adicionales(Fuente: [Wipedia](https://es.wikipedia.org/wiki/Twitter_Bootstrap))
+### VISTAS SAILS
+ Las vistas son las plantillas de marcado que se compilan en el servidor en páginas HTML. En la mayoría de los casos, se utilizan diferentes vistas como la respuesta a una petición HTTP entrante, por ejemplo, para servir a su página de inicio.(Fuente: [sails](http://sailsjs.com/documentation/concepts/views))
 
 
 <a name="tema6"></a>
-### GRID
-Son estructuras para sobreponer objetos html, se permite un maximo de 12 columnas y tienes diferentes tipos de llamadas.
-* xs telefonos
-* sm tablests
-* md escritorio
-* lg escritorio largo
- (Fuente: [w3school](http://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp))
+### RUTAS SAILS
+Como la mayoría de los frameworks web, Sails ofrece un router: un mecanismo de direcciones URL de asignación de controladores y vistas. Las rutas son las reglas que le indican a Sails lo que se puede hacer cuando se enfrenta a una petición de entrada. Hay dos tipos principales de rutas en Velas: 
+* personalizado
+* automática.
+ (Fuente: [sails](http://sailsjs.com/documentation/concepts/routes))
  
 <a name="tema7"></a>
-### TIPOGRAFIA
-Formato de los titulos, esta asociado para cada titulo un distinto tamaño que va desde el mas grande (h1), hasta ubicarse entre los mas pequeños (h2,h3...). Ademas cuenta con tags para la implementacion de estilos como negritas, cursiva, subrayado entre otros.(Fuente: [Wikipedia] (Fuente: [w3school](http://www.w3schools.com/bootstrap/bootstrap_typography.asp))
+### CONTROLADORES
+Son los principales objetos de la aplicación sails que son responsables de responder a las peticiones de un navegador web, aplicaciones móviles o cualquier otro sistema capaz de comunicarse con un servidor. A menudo actúan como un intermediario entre sus modelos y las vistas. Para muchas aplicaciones, los controladores contienen la mayor parte de su proyecto de la lógica de negocio.(Fuente: [sails](http://sailsjs.com/documentation/concepts/controllers))
+
+<a name="tema8"></a>
+### PIPELINE SAILS
+Es un archivo que forma parte del codigo interno de sails, este archivo determina el orden en que las hojas de estilo, JavaScript y  plantilla del lado del cliente deben ser compilados y vinculados al servidor.(Fuente: [sails](http://sailsjs.com/documentation/anatomy/tasks/pipeline-js))
+
+
 
 
 <a name="desarrollo"></a>
@@ -151,7 +129,6 @@ En la carpeta API se crea una funcion para el contralador client.
 De esta manera, en la paigna web se coloca la direccion con el nombre del controlador seguido de su funcion.
 
 
-
 <p align="center">
 <img src="https://github.com/faxa94/JavaScript/blob/sails2/imagenes/Captura7.PNG?raw=true" width="500" height="300">
 </p>
@@ -188,16 +165,18 @@ Utilizacion del postman para elimianr un registro conenido en nueestro pagina we
 <img src="https://github.com/faxa94/JavaScript/blob/sails2/imagenes/Captura15.PNG?raw=true" width="500" height="300">
 </p>
 ### Descripcion
-El resultado en nuestra pagina web es el elemento eliminado.
+El resultado en nuestra pagina web es un elemento eliminado.
+
+
 
 
 
 <a name="conrec"></a>
 ## Conclusiones y Recomendaciones
 
-- El inspector de google chrome, me permite observar los estilos que se han impuesto a una clase u objeto html. Tambien permite que a un mismo objeto asignarle direferentes estilos, el inspector recoge la informacion de todos los estilos aplicados y destaca aquel que se esta utilizando en ese instante. 
-- Bootstrap, tiene un fichero de estilos, entre los mas detacados estas el tamaño y la forma de los grid.
-- Se puede asignar diferentes tipos de formato a un mismo objeto, sin embargo solo se aplicara el ultimo asignado, debido a que los ficheros css trabajan en cascada.
+- Dentro de una apliacaicon web debemos definir el orm o modelo que se va utilizar, agregando la funcionalidad de la aplicacion a traves de los controladores y desplegando la informacion que traen los controladores por medio de plantillas ejs al cliente.
+- Para los modelos, se tiene que espeficar los atributos que se desean almacenar en un gestor de base de datos, mediante estructuras json.
+- Sails es un framework web que esta basado en node.js y su utilidad radica en que separa a una aplicacion web en tres partes, modelos, vistas y controladores de esta manera la mantenibilidad del codigo resulta mas facil al programador.
 
 <br>
 <a href="#cabecera">A la cabecera</a>
