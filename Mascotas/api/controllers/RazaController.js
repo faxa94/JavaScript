@@ -16,8 +16,9 @@ module.exports = {
         var uploadFile = req.file('uploadFile');
           uploadFile.upload({ dirname: '../../assets/images' },function onUploadComplete(err, files) {
           if (err) return res.serverError(err);
-          console.log("..........."+files);
-          Raza.create({
+          var ee=files[0];
+          console.log(ee.type);
+            Raza.create({
             nombre: parametros.nombre,
             files: files.filename
           }).exec(function (error, razaCreado) {
