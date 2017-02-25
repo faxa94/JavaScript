@@ -1,0 +1,22 @@
+  <form action="raza/editarRaza" method="post">
+<div class="card">
+<% for(var i=0; i<razas.length; i++){ %>
+  <img class="card-img-top" src="<%=razas[i].imagenRaza%>" alt="<%=razas[i].imagenRaza%> ">
+  <div class="card-block">
+    <h4 class="card-title"><%=razas[i].id%>  <%=razas[i].nombre%></h4>
+    <p class="card-text">Defectos Geneticos:  <%=razas[i].defectosGeneticos%></p>
+      <div class="card-block">  
+       <a style="color:white" href="/EditarRaza?id=<%=raza[i].id%>">
+      <button class="btn btn-primary"> Editar</button>
+    </a>
+       <a style="color:white" href="/Raza/destroy/<%=raza[i].id%>">
+      <button class="btn btn-block btn-danger"> Borrar</button>
+    </a>
+  </div>
+  </div>
+  <br>
+    <%  } %>
+</div>
+    <button type="submit" class="btn btn-success">Crear Raza</button>
+
+<form>

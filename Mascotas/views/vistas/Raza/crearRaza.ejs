@@ -1,0 +1,32 @@
+<div style='background-color:white;color:black;'>
+
+  <h1>Crea Razas</h1>
+  <p>¡Registra las razas !</p>
+
+  <form action="raza/crearRaza" enctype="multipart/form-data" method="post">
+  
+
+ 
+    <div class="form-group">
+      <label>Nombre</label>
+      <input required type="text" class="form-control"  placeholder="Nombre" name="nombre">
+    </div>
+
+
+    <div class="form-group">
+      <label>Defectos Geneticos:</label>
+    <label class="radio-inline">
+  <input type="radio" name="defectosGeneticos" value="Si"> Si
+</label>
+<label class="radio-inline">
+  <input type="radio" name="defectosGeneticos" value="No"> No
+</label> 
+      </div>
+  <br>
+ <input type="file" name="uploadFile" />
+  <br>
+    <button type="submit" class="btn btn-success">Crear Raza</button>
+    <br>
+
+  </form>
+</div>

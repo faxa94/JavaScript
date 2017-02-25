@@ -1,0 +1,21 @@
+
+<div class="card"  style="width: 20rem;">
+<% for(var i=0; i<razas.length; i++){ %>
+  <img class="card-img-top" src="/images/<%=razas[i].files%>" style="height: 180px; width: 100%; display: block;">
+  <div class="card-block">
+    <h4 class="card-title"><%=razas[i].id%>  <%=razas[i].nombre%></h4>
+    <p class="card-text">Defectos Geneticos:  <%=razas[i].defectosGeneticos%></p>
+      <div class="card-block">  
+       <a style="color:white" href="/EditarRaza?id=<%=razas[i].id%>">
+      <button class="btn btn-primary"> Editar</button>
+    </a>
+       <a style="color:white" href="/Raza/destroy/<%=razas[i].id%>">
+      <button class="btn  btn-danger"> Borrar</button>
+    </a>
+  </div>
+  </div>
+  <br>
+    <%  } %>
+</div>
+
+
