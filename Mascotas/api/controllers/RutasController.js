@@ -143,12 +143,31 @@ module.exports = {
     });
   },
   editarRaza: function (req, res) {
-    Raza.find().exec(function (error, razasEncontrados) {
-      if (error) return res.serverError();
-      return res.view('vistas/Raza/editarRaza', {
-        title: 'Crear Mascota',
-        razas: razasEncontrados
+    var parametros = req.allParams();
+    console.log(parametros);
+    if (parametros.id) {
+      Raza.findOne({
+        id: parametros.id
+      }).exec(function (error, encontrados) {
+        if (error) return res.view('error', {
+          title: 'Error',
+          error: {
+            descripcion: 'Fallo al buscar la raza',
+            url: '/editarRaza'
+          }
+        });
+        return res.view('vistas/Raza/editarRaza', { razas: encontrados })
       });
-    });
+    }else {
+      return res.view('error', {
+        title: 'Error',
+        error: {
+          descripcion: 'No existe el ID'
+        }
+      });
+    }
+
+
+
   }
 };

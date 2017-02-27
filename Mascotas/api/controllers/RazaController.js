@@ -16,7 +16,7 @@ module.exports = {
         var uploadFile = req.file('uploadFile');
         var origifile = uploadFile._files[0].stream.filename;
         console.log(origifile);
-        uploadFile.upload({ dirname: '../../assets/images', saveAs:origifile }, function onUploadComplete(err, files) {
+        uploadFile.upload({ dirname: '../../assets/images', saveAs: origifile }, function onUploadComplete(err, files) {
           if (err) return res.serverError(err);
           console.log(files);
 
@@ -65,42 +65,49 @@ module.exports = {
 
   },
   editarRaza: function (req, res) {
-    var parametros = req.allParams;
-    sails.log.info(parametros);
+      var parametros = req.allParams();
+
     if (req.method == 'POST') {
-      if (parametros.nombre && parametros.defectosGeneticos && parametros.file) {
-        Raza.update({ id: parametros.id },
-          {
+      if (parametros.nombre) {
+
+        var uploadFile = req.file('uploadFile');
+        var origifile = uploadFile._files[0].stream.filename;
+        console.log(parametros);
+        uploadFile.upload({ dirname: '../../assets/images', saveAs: origifile }, function onUploadComplete(err, files) {
+          if (err) return res.serverError(err);
+          console.log(files);
+
+          Raza.update({   id: parametros.id}
+          ,{
             nombre: parametros.nombre,
             defectosGeneticos: parametros.defectosGeneticos,
-            //files: files[0].filename
-          }
-        ).exec(function (error, razaCreada) {
-          if (error) {
-            return res.view('error', {
+            files: origifile
+          }).exec(function (error, razaCreado) {
+            if (error) return res.view('error', {
               title: 'Error',
               error: {
-                descripcion: 'No se puede actualizar la raza: ' + error,
-                url: '/editarRaza'
+                descripcion: 'Hubo Problemas creando la raza, intentalo de nuevo: ' + error,
+                url: '/crearRaza'
               }
             });
-          }
-          Raza.find().exec(function (error, razaEncontradas) {
-            if (error) return res.serverError()
-            return res.view('vistas/Raza/listarRazas', {
-              title: 'Lista de Razas',
-              razas: razaEncontradas
-            })
+            Raza.find().exec(function (error, razasEncontrados) {
+              if (error) return res.serverError()
+              sails.log.info(razasEncontrados);
+              return res.view('vistas/Raza/listarRazas', {
+                title: 'Lista de Razas',
+                razas: razasEncontrados
+              })
+            });
           });
-
         });
-
-      } else {
+      }
+      else {
+        // bad Request
         return res.view('error', {
           title: 'Error',
           error: {
-            descripcion: 'Llenar todos los campos',
-            url: '/editarRaza'
+            descripcion: 'No envia todos los parametros',
+            url: '/crearRaza'
           }
         });
       }
@@ -108,8 +115,8 @@ module.exports = {
       return res.view('error', {
         title: 'Error',
         error: {
-          descripcion: 'Metodo http no permitido',
-          url: '/editarRaza'
+          descripcion: 'Falla en el metodo HTTP',
+          url: '/crearRaza'
         }
       });
     }

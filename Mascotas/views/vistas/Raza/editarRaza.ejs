@@ -1,22 +1,45 @@
-  <form action="raza/editarRaza" method="post">
-<div class="card">
-<% for(var i=0; i<razas.length; i++){ %>
-  <img class="card-img-top" src="<%=razas[i].imagenRaza%>" alt="<%=razas[i].imagenRaza%> ">
-  <div class="card-block">
-    <h4 class="card-title"><%=razas[i].id%>  <%=razas[i].nombre%></h4>
-    <p class="card-text">Defectos Geneticos:  <%=razas[i].defectosGeneticos%></p>
-      <div class="card-block">  
-       <a style="color:white" href="/EditarRaza?id=<%=raza[i].id%>">
-      <button class="btn btn-primary"> Editar</button>
-    </a>
-       <a style="color:white" href="/Raza/destroy/<%=raza[i].id%>">
-      <button class="btn btn-block btn-danger"> Borrar</button>
-    </a>
-  </div>
-  </div>
-  <br>
-    <%  } %>
-</div>
-    <button type="submit" class="btn btn-success">Crear Raza</button>
+<div style='background-color:white;color:black;'>
 
-<form>
+  <h1>Editar Razas</h1>
+  
+
+  <div class="jumbotron">
+  <div class="text-center">
+      <h3 class="text-center"> ID: <%=razas.id%> :  <%=razas.nombre%></h3>
+      <h4 class="text-center"> Defectos Geneticos: <%=razas.defectosGeneticos%></h4>
+      <img class="rounded" src="/images/<%=razas.files%>" style="height: 180px; width: 250px;">
+  </div>
+    </div>
+<h4>Despues de realizar los cambios presione la opcion Guardar</h4>
+<div class="row">
+    <div class="col-sm-6">
+
+  <form action="raza/editarRaza" enctype="multipart/form-data" method="post">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input required type="text" class="form-control"  placeholder="Nombre" name="nombre">
+    </div>
+
+    <div class="form-group">
+      <label>Defectos Geneticos:</label>
+    <label class="radio-inline">
+  <input type="radio" name="defectosGeneticos" value="Si"> Si
+</label>
+<label class="radio-inline">
+  <input type="radio" name="defectosGeneticos" value="No"> No
+</label> 
+      <input type="hidden" name="id" value="<%=razas.id%>">
+      </div>
+  <br>
+ <input type="file" name="uploadFile" />
+  <br>
+
+    <button type="submit" class="btn btn-success">Guardar</button>
+    <br>
+
+  </form>
+</div>
+</div>
+
+</div>
+
